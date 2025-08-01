@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
         <div className='flex items-center gap-2'>
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
-            <li><a href="#home" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Home</a></li>
-            <li><a href="#services" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Services</a></li>
-            <li><a href="#why-china" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Why China?</a></li>
-            <li><a href="#shopping" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Shopping Guide</a></li>
-            <li><a href="#contact" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Contact</a></li>
+            <li><a href="#home" className="text-black font-bold hover:text-gray-500 transition-colors">Home</a></li>
+            <li><a href="#services" className="text-black font-bold hover:text-gray-500 transition-colors">Services</a></li>
+            <li><a href="#why-china" className="text-black font-bold hover:text-gray-500 transition-colors">Why China?</a></li>
+            <li><a href="#shopping" className="text-black font-bold hover:text-gray-500 transition-colors">Shopping Guide</a></li>
+            <li><a href="#contact" className="text-blue-800 font-bold hover:text-gray-500 transition-colors">Contact</a></li>
           </ul>
 
         

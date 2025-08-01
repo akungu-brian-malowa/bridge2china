@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[85vh] w-full overflow-hidden"
+      className="relative flex items-center justify-center min-h-[55vh] w-full overflow-hidden"
     >
       {/* Background image with gradient overlay */}
       <div 
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {/* Main heading with responsive sizing */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold mb-4 md:mb-6 uppercase tracking-tight">
+          <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold mb-4 md:mb-6 uppercase tracking-tight">
             <span className="block text-[#e5d3c0]">Discover</span>
             <span className="block text-[#8a6725] mt-2">THE WORLD</span>
           </h1>
