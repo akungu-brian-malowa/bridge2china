@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           {/* Main heading with responsive sizing */}
           <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold mb-4 md:mb-6 uppercase tracking-tight">
             <span className="block text-[#e5d3c0]">Discover</span>
-            <span className="block text-[#8a6725] mt-2">THE WORLD</span>
+            <span className="block text-[#e5d3c0] mt-2">THE WORLD</span>
           </h1>
           
           {/* Subheading with responsive sizing */}

@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
             <li><a href="#services" className="text-black font-bold hover:text-gray-500 transition-colors">Services</a></li>
             <li><a href="#why-china" className="text-black font-bold hover:text-gray-500 transition-colors">Why China?</a></li>
             <li><a href="#shopping" className="text-black font-bold hover:text-gray-500 transition-colors">Shopping Guide</a></li>
-            <li><a href="#contact" className="text-blue-800 font-bold hover:text-gray-500 transition-colors">Contact</a></li>
+            <li><a href="#contact" className="text-black font-bold hover:text-gray-500 transition-colors">Contact</a></li>
           </ul>
 
         
