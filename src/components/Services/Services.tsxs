@@ -1,0 +1,146 @@
+import React from "react";
+import { FaTools, FaCarAlt, FaDollarSign, FaShieldAlt, FaClock, FaHeadset } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { SlideUp } from "../../animation/animate";
+
+const ServiceCard = [
+  {
+    id: 1,
+    title: "Expert Repairs",
+    description:
+      "Our ASE-certified technicians provide top-notch repairs to keep your vehicle running smoothly.",
+    icon: <FaTools className="text-2xl" />,
+    link: "#",
+    delay: 0.2,
+  },
+  {
+    id: 2,
+    title: "Quality Parts",
+    description:
+      "We use only OEM and premium aftermarket parts to ensure the longevity and reliability of your vehicle.",
+    icon: <FaCarAlt className="text-2xl" />,
+    link: "#",
+    delay: 0.4,
+  },
+  {
+    id: 3,
+    title: "Affordable Pricing",
+    description:
+      "We offer competitive pricing without compromising on quality, making car care accessible.",
+    icon: <FaDollarSign className="text-2xl" />,
+    link: "#",
+    delay: 0.6,
+  },
+  {
+    id: 4,
+    title: "Service Warranty",
+    description:
+      "All our repairs come with a 12-month warranty for your peace of mind.",
+    icon: <FaShieldAlt className="text-2xl" />,
+    link: "#",
+    delay: 0.3,
+  },
+  {
+    id: 5,
+    title: "Quick Service",
+    description:
+      "Most services completed same-day with our efficient workflow.",
+    icon: <FaClock className="text-2xl" />,
+    link: "#",
+    delay: 0.5,
+  },
+  {
+    id: 6,
+    title: "Roadside Assistance",
+    description:
+      "24/7 emergency support for when you need help on the road.",
+    icon: <FaHeadset className="text-2xl" />,
+    link: "#",
+    delay: 0.7,
+  },
+];
+
+const Services: React.FC = () => {
+  return (
+    <div className="bg-white py-20">
+      <div className="container">
+        {/* heading title */}
+        <div className="space-y-2 text-center max-w-3xl mx-auto mb-16">
+          <motion.h1
+            variants={SlideUp(0.2)}
+            initial="initial"
+            whileInView={"animate"}
+            className="text-4xl font-bold"
+          >
+            Why Choose <span className="text-red-600">Kite Auto Fix</span>
+          </motion.h1>
+          <div className="w-24 h-1 bg-red-600 mx-auto my-4"></div>
+          <motion.p
+            variants={SlideUp(0.4)}
+            initial="initial"
+            whileInView={"animate"}
+            className="text-gray-600 text-lg"
+          >
+            Exceptional auto services tailored to your needs, ensuring safety and satisfaction on Nairobi roads.
+          </motion.p>
+        </div>
+        
+        {/* card section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {ServiceCard.map((card) => (
+            <motion.div
+              variants={SlideUp(card.delay)}
+              initial="initial"
+              whileInView={"animate"}
+              key={card.id}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl p-8 transition-all duration-300 border border-gray-100 relative overflow-hidden group"
+            >
+              {/* Decorative element */}
+              <div className="absolute top-0 right-0 w-16 h-16 bg-red-600 opacity-10 rounded-full -m-4 group-hover:opacity-20 transition-opacity"></div>
+              
+              <div className="relative z-10">
+                <div className="bg-red-100 text-red-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  {card.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-4">{card.title}</h3>
+                <p className="text-gray-600 mb-6">{card.description}</p>
+                <a
+                  href={card.link}
+                  className="text-red-600 font-medium flex items-center group-hover:underline"
+                >
+                  Learn More
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
+        {/* Stats section */}
+        <motion.div 
+          variants={SlideUp(0.8)}
+          initial="initial"
+          whileInView={"animate"}
+          className="mt-20 bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-8 text-white text-center"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { value: "10+", label: "Years Experience" },
+              { value: "98%", label: "Customer Satisfaction" },
+              { value: "24/7", label: "Roadside Assistance" }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl font-bold mb-2">{stat.value}</div>
+                <div className="text-red-100">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default Services;

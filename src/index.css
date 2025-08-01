@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply text-sm font-semibold lg:text-base border-[1px] border-red-600 px-4 py-2 shadow-[5px_5px_0px_0px] hover:bg-red-500 hover:text-white duration-300 hover:shadow-[5px_5px_0px_0px_#eb9999];
+  }
+}
+
+
+/* .primary-btn {
+  @apply inline-block bg-secondary text-white font-semibold rounded-lg hover:bg-secondary duration-200 shadow-[0px_10px_8px_-7px_#ffd978] hover:shadow-[0px_10px_8px_-7px_#69a79c] py-2 px-6;
+} */
