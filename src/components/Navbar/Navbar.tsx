@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         <div className="text-2xl font-bold flex items-center">
         <img 
             src={Logo} 
-            alt="Kite Auto Fix and Spares Logo" 
+            alt="Vasha The Place" 
             className="w-16 h-10 md:w-24 md:h-14 mr-2"
           />
           {/* <span className="text-blue-700">Vasha</span>

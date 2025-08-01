@@ -57,7 +57,7 @@ const WhyChina: React.FC = () => {
           ))}
         </div>
         
-        <div className="mt-12 max-w-4xl mx-auto bg-blue-50 p-8 rounded-xl shadow-md">
+        <div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-md">
           <h3 className="text-xl font-bold text-black mb-4">China's Top Exports & Imports</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
