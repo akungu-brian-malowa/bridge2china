@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
         </nav>
         <Link 
             to="/contact-us" 
-            className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white "
+            className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white hidden md:block"
           >
             Book Service
           </Link>
@@ -75,6 +75,7 @@ const Navbar: React.FC = () => {
       </div>
       
       {/* Mobile Navigation */}
+      <div>
       {isMenuOpen && (
         <nav className="md:hidden bg-white shadow-lg">
           <ul className="flex flex-col py-2">
@@ -86,6 +87,14 @@ const Navbar: React.FC = () => {
           </ul>
         </nav>
       )}
+      <Link 
+            to="/contact-us" 
+            className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white  md:hidden block"
+          >
+            Book Service
+          </Link>
+      </div>
+   
       </div>
     </header>
   );
