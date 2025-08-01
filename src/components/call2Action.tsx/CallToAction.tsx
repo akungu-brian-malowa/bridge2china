@@ -5,7 +5,7 @@ const CallToAction: React.FC = () => {
   return (
     <section 
       id="contact" 
-      className="py-16 bg-white text-black"
+      className="py-16 bg-white text-black max-w-7xl mx-auto"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">

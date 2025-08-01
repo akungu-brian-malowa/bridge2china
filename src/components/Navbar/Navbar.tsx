@@ -1,6 +1,7 @@
 // src/components/Navbar.tsx
 import React, { useState } from 'react';
 import Logo from "../../assets/vasha.png";
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,19 +11,23 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="fixed w-full bg-white shadow-md z-50">
+    <header className="fixed w-full bg-white shadow-md z-50 ">
+      <div className='max-w-7xl mx-auto'>
+
+      
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-2xl font-bold flex items-center">
         <img 
             src={Logo} 
             alt="Kite Auto Fix and Spares Logo" 
-            className="w-8 h-8 md:w-40 md:h-24 mr-2"
+            className="w-10 h-10 md:w-20 md:h-16 mr-2"
           />
           {/* <span className="text-blue-700">Vasha</span>
           <span className="text-teal-500">ThePlace</span> */}
         </div>
         
         {/* Desktop Navigation */}
+        <div className='flex items-center gap-2'>
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             <li><a href="#home" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Home</a></li>
@@ -31,7 +36,19 @@ const Navbar: React.FC = () => {
             <li><a href="#shopping" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Shopping Guide</a></li>
             <li><a href="#contact" className="text-blue-800 font-bold hover:text-blue-700 transition-colors">Contact</a></li>
           </ul>
+
+        
         </nav>
+        <Link 
+            to="/contact-us" 
+            className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white "
+          >
+            Book Service
+          </Link>
+
+        </div>
+        
+     
         
         {/* Mobile Menu Button */}
         <button 
@@ -62,6 +79,7 @@ const Navbar: React.FC = () => {
           </ul>
         </nav>
       )}
+      </div>
     </header>
   );
 };

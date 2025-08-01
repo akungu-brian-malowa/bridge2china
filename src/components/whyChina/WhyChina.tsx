@@ -39,7 +39,7 @@ const WhyChina: React.FC = () => {
   ];
 
   return (
-    <section id="why-china" className="py-16 bg-[#e5d3c0]">
+    <section id="why-china" className="py-16 bg-[#e5d3c0] max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800 relative pb-4">
           Why China?

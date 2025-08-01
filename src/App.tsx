@@ -9,7 +9,7 @@ import OurTeam from "./pages/OurTeam";
 
 function App() {
   return (
-    <main className="overflow-x-hidden bg-[#e5d3c0]">
+    <main className="overflow-x-hidden bg-white">
       <Router>
         <Navbar />
         <Routes>
