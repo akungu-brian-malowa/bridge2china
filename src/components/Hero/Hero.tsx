@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[55vh] w-full overflow-hidden mt-10"
+      className="relative flex items-center justify-center min-h-[45vh] max-h-[50vh] w-full overflow-hidden mt-10"
     >
       {/* Background image with gradient overlay */}
       <div 
