@@ -2,13 +2,13 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white text-[#333] max-w-7xl mx-auto">
       {/* Hero Section */}
-      <div className="relative py-24 px-4 md:px-8 overflow-hidden">
+      <div className="relative py-16 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0 "></div>
         <div className="container mx-auto max-w-6xl relative z-10">
-          <h1 className="text-md md:text-4xl font-bold text-center mb-6 text-[#8a6725]">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-[#8a6725]">
             About Us
           </h1>
-          <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-12 font-bold">
+          <p className="text-lg md:text-2xl text-center max-w-3xl mx-auto mb-8 md:lg-12 font-bold">
             Your Journey to China Starts Here with Us!!
           </p>
 
@@ -21,7 +21,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="bg-white rounded-2xl p-3 max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-center italic">
+            <p className="text-md md:text-xl text-center italic">
               <span className="font-bold">
                 Bridge <span className="text-red-700">To</span>China
                 VashaThePlace{" "}
@@ -43,6 +43,9 @@ const AboutUs = () => {
       {/* Our Story */}
       <section className="py-2 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725] block md:hidden">
+            Our Story
+          </h2>
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
@@ -54,17 +57,17 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725]">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725] md:block hidden">
                 Our Story
               </h2>
-              <p className="text-lg mb-4">
+              <p className="text-md md:text-lg mb-4 text-center md:text-start">
                 Founded in 2018, VashaThePlace began as a small consultancy
                 helping Kenyan entrepreneurs navigate the complexities of
                 importing goods from China. What started as a passion project
                 quickly grew into a full-service agency as we recognized the
                 growing demand for reliable China-Kenya trade facilitation.
               </p>
-              <p className="text-lg mb-4">
+              <p className="text-md md:text-lg mb-4 text-center md:text-start">
                 Today, we've helped over 500 businesses and individuals
                 successfully establish connections with Chinese suppliers,
                 source quality products, and navigate the import/export process
@@ -102,7 +105,7 @@ const AboutUs = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">
                 Our Mission
               </h3>
-              <p className="text-lg">
+              <p className="text-md md:text-lg">
                 To bridge the gap between Kenyan businesses and the Chinese
                 market by providing reliable, efficient, and personalized
                 services that simplify cross-border trade and travel.
@@ -114,7 +117,7 @@ const AboutUs = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">
                 Our Vision
               </h3>
-              <p className="text-lg">
+              <p className="text-md md:text-lg">
                 To become East Africa's premier China trade facilitator,
                 empowering Kenyan entrepreneurs to compete globally through
                 access to quality Chinese products and market opportunities.
