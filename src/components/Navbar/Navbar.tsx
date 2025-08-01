@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import React, { useState } from 'react';
-import Logo from "../../assets/vasha.png";
+import Logo from "../../assets/vasha.jpg";
 import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
@@ -20,10 +20,17 @@ const Navbar: React.FC = () => {
         <img 
             src={Logo} 
             alt="Kite Auto Fix and Spares Logo" 
-            className="w-10 h-10 md:w-20 md:h-16 mr-2"
+            className="w-10 h-10 md:w-24 md:h-14 mr-2"
           />
           {/* <span className="text-blue-700">Vasha</span>
           <span className="text-teal-500">ThePlace</span> */}
+          <div className='flex-col text-center '>
+          <h3 className='text-sm  font-bold uppercase'>Bridge
+          <span className='text-red-700'>To</span>China</h3>
+          <h4 className='text-xs  font-semibold uppercase'>Vasha The Place</h4>
+
+          </div>
+         
         </div>
         
         {/* Desktop Navigation */}

@@ -14,7 +14,7 @@ const AboutUs = () => {
           
           <div className="bg-[#e5d3c0] rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
             <p className="text-lg md:text-xl text-center italic">
-              "At VashaThePlace, we believe in creating meaningful connections between Kenyan businesses and individuals with the dynamic Chinese market. Our expertise and dedication make the journey seamless and rewarding."
+              "At BridgeToChina, we believe in creating meaningful connections between Your businesses and individuals with the dynamic Chinese market. Our expertise and dedication make the journey seamless and rewarding."
             </p>
           </div>
         </div>
