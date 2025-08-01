@@ -9,7 +9,7 @@ const AboutUs = () => {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-12">
-            Your trusted bridge connecting Kenya to the vast opportunities in China
+            Your trusted bridge connecting You to the vast opportunities in China
           </p>
           
           <div className="bg-[#e5d3c0] rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
