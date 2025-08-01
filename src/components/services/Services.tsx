@@ -10,7 +10,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
-      <div className="bg-[#8a6725] text-white p-5 flex justify-center">
+      <div className="bg-[#e5d3c0]  text-white p-5 flex justify-center">
         <span className="text-4xl">{icon}</span>
       </div>
       <div className="p-6">
@@ -48,9 +48,9 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-16 bg-[rgb(250,249,247)] max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800 relative pb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#8a6725] relative pb-4">
           Our Services
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-teal-500 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#e5d3c0]  rounded-full"></div>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
