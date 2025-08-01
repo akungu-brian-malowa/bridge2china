@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Logo from "../../assets/vasha.jpg";
 import { Link } from 'react-router-dom';
-import { div } from 'framer-motion/client';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +20,7 @@ const Navbar: React.FC = () => {
         <img 
             src={Logo} 
             alt="Kite Auto Fix and Spares Logo" 
-            className="w-10 h-10 md:w-24 md:h-14 mr-2"
+            className="w-16 h-10 md:w-24 md:h-14 mr-2"
           />
           {/* <span className="text-blue-700">Vasha</span>
           <span className="text-teal-500">ThePlace</span> */}
@@ -80,7 +79,7 @@ const Navbar: React.FC = () => {
       {isMenuOpen && (
         <>
        
-        <nav className="md:hidden bg-white shadow-lg">
+        <nav className="md:hidden bg-white ">
           <ul className="flex flex-col py-2">
             <li><a href="#home" className="block py-2 px-4 text-gray-700 hover:bg-blue-50" onClick={toggleMenu}>Home</a></li>
             <li><a href="#services" className="block py-2 px-4 text-gray-700 hover:bg-blue-50" onClick={toggleMenu}>Services</a></li>
@@ -92,7 +91,7 @@ const Navbar: React.FC = () => {
 
         <Link 
             to="/#" 
-            className="bg-[#8a6725] p-3 rounded-md uppercase text-sm font-bold  text-white  md:hidden block mt-2"
+            className="bg-[#8a6725] p-3 rounded-md uppercase text-sm font-bold  text-white  md:hidden block mt-2 w-[80%] mx-auto mb-2 text-center"
           >
             Book Service
           </Link>

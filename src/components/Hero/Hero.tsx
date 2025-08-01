@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
                 boxShadow: '0 4px 14px rgba(138, 103, 37, 0.4)'
               }}
             >
-              START YOUR ADVENTURE!
+              BOOK OUR SERVICES HERE!
             </a>
           </div>
           
