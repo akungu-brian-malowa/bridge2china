@@ -20,17 +20,21 @@ const AboutUs = () => {
               rewarding."
             </p>
           </div>
-          <div className="bg-white rounded-2xl p-8 max-w-4xl mx-auto mt-2">
+          <div className="bg-white rounded-2xl p-3 max-w-4xl mx-auto">
             <p className="text-lg md:text-xl text-center italic">
-             <span className="font-bold">Vasha The Place </span> Vasha The Place is your trusted gateway to the opportunities and
-              business networks of China. We provide seamless, affordable, and
-              reliable services for individuals and businesses aiming to
-              explore, connect with, and thrive in the Chinese market. Whether
-              you're planning a trip, sourcing products, or looking to invest,
-              we help you cross the bridge with confidence. We don’t just open
-              doors—we walk the journey with you. From paperwork to purchases,
-              we've got your back. Let’s help you bridge the gap between where
-              you are and the opportunities that await in China.
+              <span className="font-bold">
+                Bridge <span className="text-red-700">To</span>China
+                VashaThePlace{" "}
+              </span>{" "}
+              is your trusted gateway to the opportunities and business networks
+              of China. We provide seamless, affordable, and reliable services
+              for individuals and businesses aiming to explore, connect with,
+              and thrive in the Chinese market. Whether you're planning a trip,
+              sourcing products, or looking to invest, we help you cross the
+              bridge with confidence. We don’t just open doors—we walk the
+              journey with you. From paperwork to purchases, we've got your
+              back. Let’s help you bridge the gap between where you are and the
+              opportunities that await in China.
             </p>
           </div>
         </div>
@@ -41,7 +45,13 @@ const AboutUs = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96" />
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
+                <img
+                  alt="our"
+                  src="https://images.pexels.com/photos/2873687/pexels-photo-2873687.jpeg"
+                  className="cover h-full rounded-md"
+                />
+              </div>
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725]">
