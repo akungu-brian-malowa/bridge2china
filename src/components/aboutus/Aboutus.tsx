@@ -1,12 +1,12 @@
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f8f4f0] to-[#e5d3c0] text-[#333] max-w-7xl mx-auto">
+    <div className="min-h-screen bg-white text-[#333] max-w-7xl mx-auto">
       {/* Hero Section */}
       <div className="relative py-24 px-4 md:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 "></div>
         <div className="container mx-auto max-w-6xl relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-6 text-[#8a6725]">
-            About VashaThePlace
+          <h1 className="text-md md:text-4xl font-bold text-center mb-6 text-[#8a6725]">
+            About Us
           </h1>
           <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-12">
             Your trusted bridge connecting Kenya to the vast opportunities in China
