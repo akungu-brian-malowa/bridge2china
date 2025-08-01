@@ -10,11 +10,11 @@ interface ReasonCardProps {
 const ReasonCard: React.FC<ReasonCardProps> = ({ number, title, description }) => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg">
-      <div className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold mb-4">
+      <div className="w-10 h-10 bg-[#8a6725] rounded-full flex items-center justify-center text-white font-bold mb-4">
         {number}
       </div>
-      <h3 className="text-xl font-bold text-blue-800 mb-3">{title}</h3>
-      <p className="text-gray-700">{description}</p>
+      <h3 className="text-md md:text-xl font-bold text-black mb-3">{title}</h3>
+      <p className="text-gray-700 text-sm">{description}</p>
     </div>
   );
 };
@@ -41,9 +41,9 @@ const WhyChina: React.FC = () => {
   return (
     <section id="why-china" className="py-16 bg-[#e5d3c0] max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800 relative pb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#8a6725] relative pb-4">
           Why China?
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-teal-500 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#8a6725] rounded-full"></div>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -58,10 +58,10 @@ const WhyChina: React.FC = () => {
         </div>
         
         <div className="mt-12 max-w-4xl mx-auto bg-blue-50 p-8 rounded-xl shadow-md">
-          <h3 className="text-xl font-bold text-blue-800 mb-4">China's Top Exports & Imports</h3>
+          <h3 className="text-xl font-bold text-black mb-4">China's Top Exports & Imports</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-blue-700 mb-2">Top Exports:</h4>
+              <h4 className="font-semibold text-black mb-2">Top Exports:</h4>
               <ul className="list-disc pl-5 text-gray-700">
                 <li>Integrated Circuits</li>
                 <li>Telephones</li>
@@ -70,7 +70,7 @@ const WhyChina: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-blue-700 mb-2">Top Imports:</h4>
+              <h4 className="font-semibold text-black mb-2">Top Imports:</h4>
               <ul className="list-disc pl-5 text-gray-700">
                 <li>Integrated Circuits</li>
                 <li>Crude Petroleum</li>
