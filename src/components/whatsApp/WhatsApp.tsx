@@ -5,7 +5,7 @@ const WhatsApp: React.FC = () => {
   const handleWhatsAppClick = () => {
     // WhatsApp link
     window.open(
-      "https://wa.me/707854674?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
+      "https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
       "_blank"
     );
   };
