@@ -79,12 +79,12 @@ const Navbar: React.FC = () => {
                 </li>
               </ul>
             </nav>
-            <Link
-              to="/contact-us"
+            <a href="#"
+              
               className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white hidden md:block"
             >
               Book Service
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -180,12 +180,11 @@ const Navbar: React.FC = () => {
                 </ul>
               </nav>
 
-              <Link
-                to="/#"
+              <a href="#"
                 className="bg-[#8a6725] p-3 rounded-md uppercase text-sm font-bold  text-white  md:hidden block mt-2 w-[80%] mx-auto mb-2 text-center"
               >
                 Book Service
-              </Link>
+              </a>
             </>
           )}
         </div>
