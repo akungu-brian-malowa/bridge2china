@@ -1,5 +1,6 @@
 const Hero: React.FC = () => {
   return (
+    //@ts-ignore
     <section
       id="home"
       
@@ -13,10 +14,10 @@ const Hero: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-4 max-w-4xl iteme-center text-center my-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase text-center">
+        <h1 className="text-lg md:text-5xl lg:text-6xl font-bold mb-2 md:mb-6 uppercase text-center">
           Discover THE WORLD
         </h1>
-        <p className="text-lg md:text-xl mb-8 text-center  text-white font-bold ">
+        <p className="text-sm md:text-xl mb-2 md:mb-8 text-center  text-white font-bold ">
           Bridge To China, Vasha The Place is your trusted gateway and
           opportunities and bussiness network to China whether you are planning
           for trips, sourcing products or looking to invest, we help you cross
