@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[55vh] w-full overflow-hidden"
+      className="relative flex items-center justify-center min-h-[55vh] w-full overflow-hidden mt-10"
     >
       {/* Background image with gradient overlay */}
       <div 
@@ -20,9 +20,8 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {/* Main heading with responsive sizing */}
-          <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold mb-4 md:mb-6 uppercase tracking-tight">
-            <span className="block text-[#e5d3c0]">Discover</span>
-            <span className="block text-[#e5d3c0] mt-2">THE WORLD</span>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-4xl  font-bold mb-4 md:mb-6 uppercase tracking-tight">
+            <span className="block text-[#e5d3c0]">Business Support & International Trade Services</span>
           </h1>
           
           {/* Subheading with responsive sizing */}
@@ -36,7 +35,7 @@ const Hero: React.FC = () => {
           <div className="mt-4 sm:mt-6">
             <a
               href="#contact"
-              className="inline-block bg-[#8a6725] hover:bg-[#a07a38] text-[#f8f4f0] font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#8a6725] focus:ring-opacity-50"
+              className="inline-block bg-[#8a6725] hover:bg-[#a07a38] text-[#f8f4f0] font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#8a6725] focus:ring-opacity-50"
               style={{
                 boxShadow: '0 4px 14px rgba(138, 103, 37, 0.4)'
               }}

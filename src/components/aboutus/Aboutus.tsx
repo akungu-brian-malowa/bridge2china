@@ -8,13 +8,29 @@ const AboutUs = () => {
           <h1 className="text-md md:text-4xl font-bold text-center mb-6 text-[#8a6725]">
             About Us
           </h1>
-          <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-12">
-            Your trusted bridge connecting You to the vast opportunities in China
+          <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-12 font-bold">
+            Your Journey to China Starts Here with Us!!
           </p>
-          
+
           <div className="bg-[#e5d3c0] rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
             <p className="text-lg md:text-xl text-center italic">
-              "At BridgeToChina, we believe in creating meaningful connections between Your businesses and individuals with the dynamic Chinese market. Our expertise and dedication make the journey seamless and rewarding."
+              "At BridgeToChina, we believe in creating meaningful connections
+              between Your businesses and individuals with the dynamic Chinese
+              market. Our expertise and dedication make the journey seamless and
+              rewarding."
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 max-w-4xl mx-auto mt-2">
+            <p className="text-lg md:text-xl text-center italic">
+             <span className="font-bold">Vasha The Place </span> Vasha The Place is your trusted gateway to the opportunities and
+              business networks of China. We provide seamless, affordable, and
+              reliable services for individuals and businesses aiming to
+              explore, connect with, and thrive in the Chinese market. Whether
+              you're planning a trip, sourcing products, or looking to invest,
+              we help you cross the bridge with confidence. We don’t just open
+              doors—we walk the journey with you. From paperwork to purchases,
+              we've got your back. Let’s help you bridge the gap between where
+              you are and the opportunities that await in China.
             </p>
           </div>
         </div>
@@ -32,10 +48,17 @@ const AboutUs = () => {
                 Our Story
               </h2>
               <p className="text-lg mb-4">
-                Founded in 2018, VashaThePlace began as a small consultancy helping Kenyan entrepreneurs navigate the complexities of importing goods from China. What started as a passion project quickly grew into a full-service agency as we recognized the growing demand for reliable China-Kenya trade facilitation.
+                Founded in 2018, VashaThePlace began as a small consultancy
+                helping Kenyan entrepreneurs navigate the complexities of
+                importing goods from China. What started as a passion project
+                quickly grew into a full-service agency as we recognized the
+                growing demand for reliable China-Kenya trade facilitation.
               </p>
               <p className="text-lg mb-4">
-                Today, we've helped over 500 businesses and individuals successfully establish connections with Chinese suppliers, source quality products, and navigate the import/export process with confidence.
+                Today, we've helped over 500 businesses and individuals
+                successfully establish connections with Chinese suppliers,
+                source quality products, and navigate the import/export process
+                with confidence.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <div className="bg-[#8a6725] text-white px-6 py-3 rounded-full">
@@ -62,21 +85,29 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-[#8a6725] mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-[#8a6725] text-5xl mb-4">🌉</div>
-              <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">
+                Our Mission
+              </h3>
               <p className="text-lg">
-                To bridge the gap between Kenyan businesses and the Chinese market by providing reliable, efficient, and personalized services that simplify cross-border trade and travel.
+                To bridge the gap between Kenyan businesses and the Chinese
+                market by providing reliable, efficient, and personalized
+                services that simplify cross-border trade and travel.
               </p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-[#8a6725] text-5xl mb-4">👁️</div>
-              <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">Our Vision</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#8a6725]">
+                Our Vision
+              </h3>
               <p className="text-lg">
-                To become East Africa's premier China trade facilitator, empowering Kenyan entrepreneurs to compete globally through access to quality Chinese products and market opportunities.
+                To become East Africa's premier China trade facilitator,
+                empowering Kenyan entrepreneurs to compete globally through
+                access to quality Chinese products and market opportunities.
               </p>
             </div>
           </div>
@@ -92,17 +123,38 @@ const AboutUs = () => {
             </h2>
             <div className="w-24 h-1 bg-[#8a6725] mx-auto"></div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: "🤝", title: "Integrity", desc: "Honest, transparent dealings in all our relationships" },
-              { icon: "💡", title: "Innovation", desc: "Constantly improving our services to better serve you" },
-              { icon: "🎯", title: "Excellence", desc: "Striving for the highest quality in everything we do" },
-              { icon: "❤️", title: "Empathy", desc: "Understanding and addressing your unique needs" },
+              {
+                icon: "🤝",
+                title: "Integrity",
+                desc: "Honest, transparent dealings in all our relationships",
+              },
+              {
+                icon: "💡",
+                title: "Innovation",
+                desc: "Constantly improving our services to better serve you",
+              },
+              {
+                icon: "🎯",
+                title: "Excellence",
+                desc: "Striving for the highest quality in everything we do",
+              },
+              {
+                icon: "❤️",
+                title: "Empathy",
+                desc: "Understanding and addressing your unique needs",
+              },
             ].map((value, index) => (
-              <div key={index} className="bg-[#f8f4f0] p-6 rounded-2xl text-center border border-[#e5d3c0]">
+              <div
+                key={index}
+                className="bg-[#f8f4f0] p-6 rounded-2xl text-center border border-[#e5d3c0]"
+              >
                 <div className="text-4xl mb-4 text-[#8a6725]">{value.icon}</div>
-                <h3 className="text-xl font-bold mb-3 text-[#8a6725]">{value.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#8a6725]">
+                  {value.title}
+                </h3>
                 <p>{value.desc}</p>
               </div>
             ))}
@@ -151,7 +203,8 @@ const AboutUs = () => {
               Ready to Explore Opportunities in China?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Let us guide you through the process with our expertise and personalized service.
+              Let us guide you through the process with our expertise and
+              personalized service.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button className="bg-[#e5d3c0] text-[#8a6725] font-bold py-3 px-8 rounded-full hover:bg-[#d4c0aa] transition">
@@ -169,4 +222,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
