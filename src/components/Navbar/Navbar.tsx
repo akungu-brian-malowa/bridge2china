@@ -1,7 +1,7 @@
 // src/components/Navbar.tsx
 import React, { useState } from "react";
 import Logo from "../../assets/vasha.jpg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +15,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center">
+            <Link to="/" className="text-2xl font-bold flex items-center">
             <img
               src={Logo}
               alt="Vasha The Place"
@@ -31,6 +32,7 @@ const Navbar: React.FC = () => {
                 Vasha The Place
               </h4>
             </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
