@@ -41,7 +41,7 @@ const AboutUs = () => {
       </div>
 
       {/* Our Story */}
-      <section className="py-16 px-4 md:px-8">
+      <section className="py-2 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
