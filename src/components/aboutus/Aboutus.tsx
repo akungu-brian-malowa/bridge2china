@@ -65,7 +65,8 @@ const AboutUs = () => {
                 helping Kenyan entrepreneurs navigate the complexities of
                 importing goods from China. What started as a passion project
                 quickly grew into a full-service agency as we recognized the
-                growing demand for reliable China-Kenya trade facilitation.
+                growing demand for reliable China to the other parts of the
+                world trade facilitation.
               </p>
               <p className="text-md md:text-lg mb-4 text-center md:text-start">
                 Today, we've helped over 500 businesses and individuals

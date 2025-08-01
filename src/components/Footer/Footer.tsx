@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { LuMessageSquare } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { SlideLeft } from "../../animation/animate";
+import Logo from "../../assets/vasha.jpg";
 
 const Footer: React.FC = () => {
 
@@ -18,10 +19,24 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company info section */}
           <div className="space-y-4 font-semibold">
-            <div className="flex items-center space-x-3">
-              {/* <img src={Logo} alt="Kite Auto Fix and Spares Logo" className="w-10 h-6 md:w-24 md:h-14" /> */}
-              <p className="text-xl font-semibold">Bridge To China</p>
+          <div className="text-2xl font-bold flex items-center">
+            <img
+              src={Logo}
+              alt="Vasha The Place"
+              className="w-16 h-10 md:w-24 md:h-14 mr-2"
+            />
+            {/* <span className="text-blue-700">Vasha</span>
+           <span className="text-teal-500">ThePlace</span> */}
+            <div className="flex-col text-center ">
+              <h3 className="text-sm  font-bold uppercase">
+                Bridge
+                <span className="text-red-700">To</span>China
+              </h3>
+              <h4 className="text-xs  font-semibold uppercase">
+                Vasha The Place
+              </h4>
             </div>
+          </div>
             <p>Nairobi, Kenya</p>
            
           </div>
