@@ -14,7 +14,7 @@ const CallToAction: React.FC = () => {
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#8a6725] rounded-full"></div>
           </h2>
           
-          <p className="text-xl mb-10">
+          <p className="text-md md:text-xl mb-10">
             Take the guesswork out of doing business with China. From visa support to sourcing and shipping, 
             Bridge to China is your one-stop partner for navigating the Chinese market with confidence and ease—at a flat, affordable service fee.
           </p>
