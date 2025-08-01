@@ -62,7 +62,7 @@ const AboutUs = () => {
               </h2>
               <p className="text-md md:text-lg mb-4 text-center md:text-start">
                 Founded in 2018, VashaThePlace began as a small consultancy
-                helping Kenyan entrepreneurs navigate the complexities of
+                helping Entrepreneurs navigate the complexities of
                 importing goods from China. What started as a passion project
                 quickly grew into a full-service agency as we recognized the
                 growing demand for reliable China to the other parts of the
