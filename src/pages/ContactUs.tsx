@@ -76,9 +76,9 @@ const ContactUs: React.FC = () => {
                   <FaMapMarkerAlt className="text-[#8a6725] text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Kenya Office</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">Main Office</h3>
                   <p className="text-gray-600">Nairobi, Kenya</p>
-                  <p className="text-gray-600">(Virtual office - appointments required)</p>
+                  <p className="text-gray-600">Ruiru, next to PCEA Mukuyu Church</p>
                 </div>
               </div>
               
@@ -98,7 +98,7 @@ const ContactUs: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info.vashathebridgetochina@gmail.com</p>
+                  <p className="text-gray-600">info.vashabridgetochina@gmail.com</p>
                 </div>
               </div>
               
@@ -118,7 +118,7 @@ const ContactUs: React.FC = () => {
             <div className="mt-10">
               <h3 className="text-lg font-semibold text-[#8a6725] mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
-                <a href="#" title="Visit our Facebook page" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="https://www.facebook.com/share/15nPvR4gNj/?mibextid=wwXIfr" title="Visit our Facebook page" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaFacebookF />
                 </a>
                 <a href="#" title="Follow us on Twitter" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
@@ -127,7 +127,7 @@ const ContactUs: React.FC = () => {
                 <a href="#"  title="Follow us on Instagram" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaInstagram />
                 </a>
-                <a href="#" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaWhatsapp />
                 </a>
               </div>
@@ -283,7 +283,7 @@ const ContactUs: React.FC = () => {
         </div>
         
         {/* FAQ Section */}
-        <div className="mt-16 bg-white rounded-2xl shadow-xl p-8">
+        {/* <div className="mt-16 bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-2xl font-bold text-[#8a6725] mb-6">Frequently Asked Questions</h2>
           
           <div className="space-y-4">
@@ -307,7 +307,7 @@ const ContactUs: React.FC = () => {
               <p className="mt-2 text-gray-600">Yes, we provide end-to-end shipping solutions including customs clearance and door-to-door delivery.</p>
             </div>
           </div>
-        </div>
+        </div> */}
         
         {/* Testimonial Section */}
         <div className="mt-16 bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
