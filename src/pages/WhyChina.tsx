@@ -5,15 +5,15 @@ const WhyChina = () => {
   return (
     <div className="min-h-screen  max-w-7xl mx-auto">
       {/* Hero Section */}
-      <div className="pt-24 pb-16 px-4 text-center [#6a4f1d] text-white">
+      <div className="pt-24 mt-10 pb-4 px-4 text-center [#6a4f1d] text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6v text-[#8a6725]">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 text-[#8a6725]">
             Why China Matters for Your Business
           </h1>
-          <p className="text-lg md:text-xl mb-8">
+          <p className="text-md md:text-xl mb-6 text-black">
             Discover why China is the world's manufacturing powerhouse and a hub of endless opportunities
           </p>
-          <div className="w-24 h-1 bg-[#e5d3c0] mx-auto mb-10"></div>
+          <div className="w-24 h-1 bg-[#e5d3c0] mx-auto mb-4"></div>
         </div>
       </div>
 
@@ -22,17 +22,17 @@ const WhyChina = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96" />
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 " />
             </div>
             <div className="lg:w-1/2">
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4">
                 <FaChartLine className="text-4xl text-[#8a6725] mr-4" />
-                <h2 className="text-2xl md:text-3xl font-bold text-[#8a6725]">
+                <h2 className="text-xl md:text-2xl font-bold text-[#8a6725]">
                   World's Second-Largest Economy
                 </h2>
               </div>
               
-              <p className="text-gray-700 mb-6 text-lg">
+              <p className="text-gray-700 mb-4 text-md md:text-lg">
                 China has transformed from an agrarian society to the world's manufacturing hub in just a few decades. 
                 With a GDP of over $17 trillion, it's the second-largest economy globally and the largest exporter by value.
               </p>
