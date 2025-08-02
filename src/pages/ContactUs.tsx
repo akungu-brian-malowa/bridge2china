@@ -118,17 +118,17 @@ const ContactUs: React.FC = () => {
             <div className="mt-10">
               <h3 className="text-lg font-semibold text-[#8a6725] mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/share/15nPvR4gNj/?mibextid=wwXIfr" title="Visit our Facebook page" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
-                  <FaFacebookF />
+                <a href="https://www.facebook.com/share/15nPvR4gNj/?mibextid=wwXIfr" title="Visit our Facebook page" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                  <FaFacebookF color='blue'/>
                 </a>
-                <a href="#" title="Follow us on Twitter" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
-                  <FaTwitter />
+                <a href="#" title="Follow us on Twitter" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                  <FaTwitter color='black' />
                 </a>
-                <a href="#"  title="Follow us on Instagram" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
-                  <FaInstagram />
+                <a href="#"  title="Follow us on Instagram" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                  <FaInstagram color='pink'/>
                 </a>
-                <a href="https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
-                  <FaWhatsapp />
+                <a href="https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                  <FaWhatsapp color='green'/>
                 </a>
               </div>
             </div>
