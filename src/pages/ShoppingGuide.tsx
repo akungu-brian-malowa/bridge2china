@@ -266,7 +266,7 @@ const ShoppingGuide = () => {
               <div className="bg-[#e5d3c0] text-[#8a6725] w-16 h-16 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
                 <FaShippingFast />
               </div>
-              <h3 className="text-xl font-bold mb-3">Reliable Shipping</h3>
+              <h3 className="text-xl font-bold mb-3">Reliable Assisted Shipping</h3>
               <p>Door-to-door delivery with customs clearance handled</p>
             </div>
           </div>
