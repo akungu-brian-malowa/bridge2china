@@ -45,7 +45,7 @@ const Services: React.FC = () => {
     { 
       title: 'Customized Logistics Solutions', 
       icon: <FaShippingFast className="text-4xl" />, 
-      description: 'End-to-end shipping and logistics tailored to your needs',
+      description: 'End-to-end Assisted shipping and logistics tailored to your needs',
       benefits: ['Air freight', 'Sea freight', 'Door-to-door delivery', 'Tracking systems']
     }
   ];
@@ -55,11 +55,11 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#8a6725] mb-4">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#8a6725] mb-4">
             Our Professional Services
           </h1>
           <div className="w-24 h-1 bg-[#8a6725] mx-auto mb-6"></div>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700">
+          <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700">
             Vasha The Place offers comprehensive services to bridge the gap between Kenya and China's vast market opportunities
           </p>
         </div>
@@ -85,14 +85,14 @@ const Services: React.FC = () => {
               className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             >
               {/* Service Header */}
-              <div className="bg-[#8a6725] text-white p-6 flex items-center">
-                <div className="mr-4 text-white">{service.icon}</div>
-                <h2 className="text-xl font-bold">{service.title}</h2>
+              <div className="bg-[#8a6725] text-white p-4 flex items-center">
+                <div className="mr-4 text-white text-sm">{service.icon}</div>
+                <h2 className="md:text-lg text-md  font-bold">{service.title}</h2>
               </div>
               
               {/* Service Content */}
               <div className="p-6">
-                <p className="text-gray-700 mb-4">{service.description}</p>
+                <p className="text-gray-700 mb-4 text-sm md:text-md font-semibold">{service.description}</p>
                 
                 <h3 className="font-semibold text-[#8a6725] mb-3 flex items-center">
                   <FaCheckCircle className="mr-2" /> Key Benefits:
@@ -101,7 +101,7 @@ const Services: React.FC = () => {
                   {service.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start">
                       <span className="text-[#8a6725] mr-2">•</span>
-                      <span>{benefit}</span>
+                      <span className='text-sm md:text-md'>{benefit}</span>
                     </li>
                   ))}
                 </ul>

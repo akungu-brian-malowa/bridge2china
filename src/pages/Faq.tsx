@@ -46,7 +46,7 @@ const Faq = () => {
       ]
     },
     {
-      title: "Shipping & Logistics",
+      title: "Assisted Shipping & Logistics",
       icon: <FaShippingFast className="text-2xl" />,
       questions: [
         {
@@ -103,7 +103,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white max-w-7xl mx-auto">
+    <div className="min-h-screen bg-white max-w-7xl mx-auto pt-24">
       {/* Hero Section */}
       <div className="pt-24 pb-16 px-4 text-center bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] text-white">
         <div className="max-w-4xl mx-auto">
@@ -113,14 +113,14 @@ const Faq = () => {
           <p className="text-lg md:text-xl mb-8">
             Find answers to common questions about our services, processes, and how we can help you connect with China
           </p>
-          <div className="w-24 h-1 bg-[#e5d3c0] mx-auto mb-10"></div>
+          <div className="w-24 h-1 bg-[#e5d3c0] mx-auto mb-8"></div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Search Bar */}
-        <div className="mb-16 max-w-3xl mx-auto">
+        {/* <div className="mb-16 max-w-3xl mx-auto">
           <div className="relative">
             <input
               type="text"
@@ -133,14 +133,14 @@ const Faq = () => {
               </svg>
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           {faqCategories.map((category, index) => (
             <button
               key={index}
-              className="flex items-center bg-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow font-medium text-[#8a6725]"
+              className="text-md flex items-center bg-white px-6 py-3 rounded-md shadow-md hover:shadow-lg transition-shadow font-medium text-[#8a6725]"
             >
               {category.icon}
               <span className="ml-2">{category.title}</span>
@@ -154,9 +154,9 @@ const Faq = () => {
           <div>
             {faqCategories.map((category, catIndex) => (
               <div key={catIndex} className="mb-16">
-                <h2 className="text-2xl font-bold text-[#8a6725] mb-6 flex items-center">
+                <h2 className="text-xl font-bold text-[#8a6725] mb-6 flex items-center">
                   {category.icon}
-                  <span className="ml-3">{category.title}</span>
+                  <span className="ml-3 ">{category.title}</span>
                 </h2>
                 
                 <div className="space-y-4">
@@ -169,7 +169,7 @@ const Faq = () => {
                         className="w-full flex justify-between items-center p-6 text-left"
                         onClick={() => toggleAccordion(catIndex * 10 + index)}
                       >
-                        <span className="font-medium text-lg">{item.question}</span>
+                        <span className="font-medium text-md">{item.question}</span>
                         {activeIndex === catIndex * 10 + index ? (
                           <FaChevronUp className="text-[#8a6725] flex-shrink-0" />
                         ) : (
@@ -178,7 +178,7 @@ const Faq = () => {
                       </button>
                       
                       {activeIndex === catIndex * 10 + index && (
-                        <div className="px-6 pb-6 text-gray-700">
+                        <div className="px-6 pb-6 text-gray-700 text-sm">
                           {item.answer}
                         </div>
                       )}
@@ -191,7 +191,7 @@ const Faq = () => {
           
           {/* General Questions */}
           <div>
-            <h2 className="text-2xl font-bold text-[#8a6725] mb-6">General Questions</h2>
+            <h2 className="text-xl font-bold text-[#8a6725] mb-6">General Questions</h2>
             
             <div className="space-y-4 mb-16">
               {generalQuestions.map((item, index) => (
@@ -203,7 +203,7 @@ const Faq = () => {
                     className="w-full flex justify-between items-center p-6 text-left"
                     onClick={() => toggleAccordion(100 + index)}
                   >
-                    <span className="font-medium text-lg">{item.question}</span>
+                    <span className="font-medium text-md">{item.question}</span>
                     {activeIndex === 100 + index ? (
                       <FaChevronUp className="text-[#8a6725] flex-shrink-0" />
                     ) : (
@@ -212,7 +212,7 @@ const Faq = () => {
                   </button>
                   
                   {activeIndex === 100 + index && (
-                    <div className="px-6 pb-6 text-gray-700">
+                    <div className="px-6 pb-6 text-gray-700 text-sm">
                       {item.answer}
                     </div>
                   )}
