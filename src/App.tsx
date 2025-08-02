@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Services from "./pages/Services";
 import OurTeam from "./pages/OurTeam";
+import WhyChina from "./pages/WhyChina";
+import ShoppingGuide from "./pages/ShoppingGuide";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/team" element={<OurTeam />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/why-china" element={<WhyChina />} />
+          <Route path="/shopping-guide" element={<ShoppingGuide/>}/>
         </Routes>
         <Footer />
       </Router>

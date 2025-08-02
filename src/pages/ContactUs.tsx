@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebookF, FaTwitter, FaInstagram, FaPaperPlane, FaWhatsapp, FaCar } from 'react-icons/fa';
-import WhatsApp from '../components/whatsApp/WhatsApp';
+import { 
+  FaPhoneAlt, 
+  FaEnvelope, 
+  FaMapMarkerAlt, 
+  FaClock, 
+  FaFacebookF, 
+  FaTwitter, 
+  FaInstagram, 
+  FaPaperPlane,
+  FaWhatsapp,
+  FaPassport,
+  FaShoppingCart,
+} from 'react-icons/fa';
+import { FaQuoteLeft } from 'react-icons/fa6';
 
 const ContactUs: React.FC = () => {
-
-  const handleWhatsAppClick = () => {
-    // WhatsApp link
-    window.open(
-      "https://wa.me/707854674?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
-      "_blank"
-    );
-  };
-
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,86 +44,90 @@ const ContactUs: React.FC = () => {
       setTimeout(() => setSubmitSuccess(false), 5000);
     }, 1500);
   };
+
+  const handleWhatsAppClick = () => {
+    window.open(
+      "https://wa.me/254721176973?text=Hello%20Vasha%20Team,%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
+      "_blank"
+    );
+  };
   
   return (
-    <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8 mt-4">
+    <div className="min-h-screen bg-white py-16 pt-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Contact <span className="text-red-600">Kite Auto Fix & Spares</span>
+          <h1 className="text-4xl sm:text-5xl font-bold text-[#221d13] mb-4">
+            Contact <span className="text-[#6a4f1d]">Vasha The Place</span>
           </h1>
-          <div className="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're conveniently located at Dagoretti Corner, Nairobi. Visit us or get in touch for all your automotive needs.
+          <div className="w-24 h-1 bg-[#8a6725] mx-auto mb-6"></div>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            Your trusted bridge to China. Get in touch with us for visa assistance, product sourcing, and market exploration.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Nairobi Location</h2>
+            <h2 className="text-2xl font-bold text-[#8a6725] mb-6">Our Contact Details</h2>
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="bg-red-100 p-4 rounded-full mr-4 flex-shrink-0">
-                  <FaMapMarkerAlt className="text-red-600 text-xl" />
+                <div className="bg-[#e5d3c0] p-4 rounded-full mr-4 flex-shrink-0">
+                  <FaMapMarkerAlt className="text-[#8a6725] text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-                  <p className="text-gray-600">Dagoretti Corner </p>
-                  <p className="text-gray-600">Plot 6</p>
+                  <h3 className="text-lg font-semibold text-gray-900">Kenya Office</h3>
                   <p className="text-gray-600">Nairobi, Kenya</p>
+                  <p className="text-gray-600">(Virtual office - appointments required)</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-100 p-4 rounded-full mr-4 flex-shrink-0">
-                  <FaPhoneAlt className="text-red-600 text-xl" />
+                <div className="bg-[#e5d3c0] p-4 rounded-full mr-4 flex-shrink-0">
+                  <FaPhoneAlt className="text-[#8a6725] text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+254 707 854 674</p>
-                  {/* <p className="text-gray-600">+254 733 987 654 (Emergency)</p> */}
+                  <p className="text-gray-600">+254 721 176 973</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-100 p-4 rounded-full mr-4 flex-shrink-0">
-                  <FaEnvelope className="text-red-600 text-xl" />
+                <div className="bg-[#e5d3c0] p-4 rounded-full mr-4 flex-shrink-0">
+                  <FaEnvelope className="text-[#8a6725] text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info@kiteautofix.co.ke</p>
-                  {/* <p className="text-gray-600">service@kiteautofix.co.ke</p> */}
+                  <p className="text-gray-600">info.vashathebridgetochina@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <div className="bg-red-100 p-4 rounded-full mr-4 flex-shrink-0">
-                  <FaClock className="text-red-600 text-xl" />
+                <div className="bg-[#e5d3c0] p-4 rounded-full mr-4 flex-shrink-0">
+                  <FaClock className="text-[#8a6725] text-xl" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Business Hours</h3>
                   <p className="text-gray-600">Monday-Friday: 8:00 AM - 6:00 PM</p>
-                  <p className="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
+                  <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
                   <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h3>
+              <h3 className="text-lg font-semibold text-[#8a6725] mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
-                <a href="#" title="Visit our Facebook page" className="bg-gray-200 hover:bg-blue-600 text-gray-800 hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="#" title="Visit our Facebook page" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaFacebookF />
                 </a>
-                <a href="#" title="Follow us on Twitter" className="bg-gray-200 hover:bg-blue-400 text-gray-800 hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="#" title="Follow us on Twitter" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaTwitter />
                 </a>
-                <a href="#"  title="Follow us on Instagram" className="bg-gray-200 hover:bg-pink-600 text-gray-800 hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="#"  title="Follow us on Instagram" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaInstagram />
                 </a>
-                <a href="#" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200 hover:bg-green-500 text-gray-800 hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="#" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-[#e5d3c0] hover:bg-[#8a6725] text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaWhatsapp />
                 </a>
               </div>
@@ -130,7 +136,7 @@ const ContactUs: React.FC = () => {
           
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <h2 className="text-2xl font-bold text-[#8a6725] mb-6">Send Us a Message</h2>
             
             {submitSuccess && (
               <div className="mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
@@ -149,8 +155,8 @@ const ContactUs: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
-                  placeholder="John Kamau"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8a6725] focus:border-transparent transition"
+                  placeholder="Your name"
                 />
               </div>
               
@@ -163,8 +169,8 @@ const ContactUs: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
-                  placeholder="john@example.com"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8a6725] focus:border-transparent transition"
+                  placeholder="your@email.com"
                 />
               </div>
               
@@ -177,7 +183,7 @@ const ContactUs: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8a6725] focus:border-transparent transition"
                   placeholder="Service Inquiry"
                 />
               </div>
@@ -191,15 +197,15 @@ const ContactUs: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
-                  placeholder="How can we help you?"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8a6725] focus:border-transparent transition"
+                  placeholder="How can we help you connect with China?"
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className={`w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                className={`w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-[#8a6725] hover:bg-[#6a4f1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#8a6725] transition ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
                 {isSubmitting ? (
                   <>
@@ -219,96 +225,107 @@ const ContactUs: React.FC = () => {
           </div>
         </div>
         
-        {/* Map Section */}
-        <div className="mt-16 bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-96 w-full">
-            <iframe 
-              title="Kite Auto Fix & Spares Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.810099514651!2d36.76643661475774!3d-1.2836795359800003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a2e3a5e3a5b%3A0x3e1f1a2e3a5e3a5b!2sDagoretti%20Corner%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1650000000000!5m2!1sen!2ske" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div className="p-6 bg-gray-50">
-            <div className="flex flex-col sm:flex-row justify-between items-center">
-              <h3 className="text-xl font-bold text-gray-900">Visit Our Auto Shop at Dagoretti Corner</h3>
-              <a 
-                href="https://goo.gl/maps/example" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="mt-4 sm:mt-0 px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
-              >
-                Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-        
         {/* Service Booking Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-8 text-white">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
             <div className="flex items-start mb-6">
               <div className="bg-white bg-opacity-20 p-3 rounded-full mr-4">
-                <FaCar className="text-2xl" />
+                <FaPassport className="text-2xl" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Book a Service Appointment</h3>
-                <p className="mt-2 opacity-90">Schedule your vehicle maintenance at your convenience</p>
+                <h3 className="text-xl font-bold">Visa Assistance</h3>
+                <p className="mt-2 opacity-90">Get help with your China visa application</p>
               </div>
             </div>
-            <button onClick={handleWhatsAppClick} className="w-full bg-white text-red-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition">
-              Book Now
+            <button 
+              onClick={() => window.location.hash = '#contact'} 
+              className="w-full bg-white text-[#8a6725] font-bold py-3 px-6 rounded-lg hover:bg-[#f0e6d8] transition"
+            >
+              Book Consultation
             </button>
           </div>
           
-          <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
             <div className="flex items-start mb-6">
-              <div  className="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+              <div className="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                <FaShoppingCart className="text-2xl" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">Product Sourcing</h3>
+                <p className="mt-2 opacity-90">Find reliable suppliers in China</p>
+              </div>
+            </div>
+            <button 
+              onClick={() => window.location.hash = '#contact'} 
+              className="w-full bg-white text-[#8a6725] font-bold py-3 px-6 rounded-lg hover:bg-[#f0e6d8] transition"
+            >
+              Start Sourcing
+            </button>
+          </div>
+          
+          <div className="bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
+            <div className="flex items-start mb-6">
+              <div className="bg-white bg-opacity-20 p-3 rounded-full mr-4">
                 <FaWhatsapp className="text-2xl" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Chat with Us on WhatsApp</h3>
-                <p className="mt-2 opacity-90">Get instant responses to your queries</p>
+                <h3 className="text-xl font-bold">Chat with Us</h3>
+                <p className="mt-2 opacity-90">Get instant responses on WhatsApp</p>
               </div>
             </div>
-            <button onClick={handleWhatsAppClick} className="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition">
-              Message Us
+            <button 
+              onClick={handleWhatsAppClick} 
+              className="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition"
+            >
+              Message on WhatsApp
             </button>
           </div>
         </div>
         
         {/* FAQ Section */}
         <div className="mt-16 bg-white rounded-2xl shadow-xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-bold text-[#8a6725] mb-6">Frequently Asked Questions</h2>
           
           <div className="space-y-4">
             <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">How quickly can I get an appointment?</h3>
-              <p className="mt-2 text-gray-600">We typically have same-day or next-day appointments available. For urgent repairs, we'll do our best to accommodate you immediately.</p>
+              <h3 className="text-lg font-semibold text-gray-900">How long does the visa process take?</h3>
+              <p className="mt-2 text-gray-600">Typically 5-10 business days, but we offer expedited services for urgent cases.</p>
             </div>
             
             <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">Do you offer warranties on repairs?</h3>
-              <p className="mt-2 text-gray-600">Yes, all our repairs come with a 12-month/20,000km warranty, whichever comes first.</p>
+              <h3 className="text-lg font-semibold text-gray-900">Can you help with quality inspections?</h3>
+              <p className="mt-2 text-gray-600">Yes, we provide comprehensive quality inspection services before shipping to ensure product standards.</p>
             </div>
             
             <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">What payment methods do you accept?</h3>
-              <p className="mt-2 text-gray-600">We accept M-Pesa, cash, all major credit cards, and mobile banking options.</p>
+              <h3 className="text-lg font-semibold text-gray-900">What are your service fees?</h3>
+              <p className="mt-2 text-gray-600">Our standard service fee is Ksh 10,000, with additional costs depending on the specific services required.</p>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold text-gray-900">Do you service all makes and models?</h3>
-              <p className="mt-2 text-gray-600">Yes, our certified technicians are trained to work on domestic, European, and Asian vehicles of all makes and models.</p>
+              <h3 className="text-lg font-semibold text-gray-900">Do you handle shipping to Kenya?</h3>
+              <p className="mt-2 text-gray-600">Yes, we provide end-to-end shipping solutions including customs clearance and door-to-door delivery.</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Testimonial Section */}
+        <div className="mt-16 bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
+          <div className="max-w-3xl mx-auto text-center">
+            <FaQuoteLeft className="text-4xl text-[#e5d3c0] mx-auto mb-6" />
+            <p className="text-lg md:text-xl italic mb-8">
+              "Vasha The Place transformed our sourcing experience. Their team in China handled everything from supplier identification to quality checks, saving us time and money. The shipping process was seamless, and the quality exceeded our expectations."
+            </p>
+            <div className="flex items-center justify-center">
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" />
+              <div>
+                <p className="font-bold">Michael Ochieng</p>
+                <p className="text-[#e5d3c0]">Director, Nairobi Import Solutions</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <WhatsApp/>
     </div>
   );
 }

@@ -41,9 +41,9 @@ const AboutUs = () => {
       </div>
 
       {/* Our Story */}
-      <section className="py-2 px-4 md:px-8">
+      <section className="py-6 px-4 md:px-8 md:mb-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725] block md:hidden">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8a6725] block md:hidden">
             Our Story
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -75,13 +75,13 @@ const AboutUs = () => {
                 with confidence.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
-                <div className="bg-[#8a6725] text-white px-6 py-3 rounded-full">
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
                   500+ Clients Served
                 </div>
-                <div className="bg-[#8a6725] text-white px-6 py-3 rounded-full">
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
                   7 Team Members
                 </div>
-                <div className="bg-[#8a6725] text-white px-6 py-3 rounded-full">
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
                   20+ Industries
                 </div>
               </div>

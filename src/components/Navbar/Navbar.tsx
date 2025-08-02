@@ -39,45 +39,45 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-2">
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
-                <li>
-                  <a
-                    href="#home"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#services"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#why-china"
+              <li>
+                  <Link
+                    to="/why-china"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                   >
                     Why China?
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#shopping"
+                  <Link
+                    to="/services"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/FAQ"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                  >
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/shopping-guide"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                   >
                     Shopping Guide
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    to="/contact-us"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
