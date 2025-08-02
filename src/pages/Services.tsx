@@ -140,7 +140,7 @@ const Services: React.FC = () => {
                 
                 {/* Horizontal connector for mobile */}
                 {index < 3 && (
-                  <div className="md:hidden absolute top-12 -bottom-10 w-0.5 h-16 bg-[#8a6725]"></div>
+                  <div className="md:hidden absolute top-12 -bottom-10 w-0.5 h-16 bg-[#8a6725] hidden "></div>
                 )}
               </div>
             ))}
