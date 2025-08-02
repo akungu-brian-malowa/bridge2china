@@ -16,22 +16,22 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center">
             <Link to="/" className="text-2xl font-bold flex items-center">
-            <img
-              src={Logo}
-              alt="Vasha The Place"
-              className="w-16 h-10 md:w-24 md:h-14 mr-2"
-            />
-            {/* <span className="text-blue-700">Vasha</span>
+              <img
+                src={Logo}
+                alt="Vasha The Place"
+                className="w-16 h-10 md:w-24 md:h-14 mr-2"
+              />
+              {/* <span className="text-blue-700">Vasha</span>
            <span className="text-teal-500">ThePlace</span> */}
-            <div className="flex-col text-center ">
-              <h3 className="text-sm  font-bold uppercase">
-                Bridge
-                <span className="text-red-700">To</span>China
-              </h3>
-              <h4 className="text-xs  font-semibold uppercase">
-                Vasha The Place
-              </h4>
-            </div>
+              <div className="flex-col text-center ">
+                <h3 className="text-sm  font-bold uppercase">
+                  Bridge
+                  <span className="text-red-700">To</span>China
+                </h3>
+                <h4 className="text-xs  font-semibold uppercase">
+                  Vasha The Place
+                </h4>
+              </div>
             </Link>
           </div>
 
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-2">
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
-              <li>
+                <li>
                   <Link
                     to="/why-china"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
@@ -81,8 +81,8 @@ const Navbar: React.FC = () => {
                 </li>
               </ul>
             </nav>
-            <a href="#"
-              
+            <a
+              href="#"
               className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white hidden md:block"
             >
               Book Service
@@ -134,55 +134,56 @@ const Navbar: React.FC = () => {
             <>
               <nav className="md:hidden bg-white ">
                 <ul className="flex flex-col py-2">
-                  <li>
-                    <a
-                      href="#home"
-                      className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-                      onClick={toggleMenu}
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#services"
-                      className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-                      onClick={toggleMenu}
-                    >
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#why-china"
-                      className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-                      onClick={toggleMenu}
-                    >
-                      Why China?
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#shopping"
-                      className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-                      onClick={toggleMenu}
-                    >
-                      Shopping Guide
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#contact"
-                      className="block py-2 px-4 text-gray-700 hover:bg-blue-50"
-                      onClick={toggleMenu}
-                    >
-                      Contact
-                    </a>
-                  </li>
+                <li>
+                  <Link
+                    to="/why-china"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    Why China?
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/FAQ"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/shopping-guide"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    Shopping Guide
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact-us"
+                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    Contact
+                  </Link>
+                </li>
                 </ul>
               </nav>
 
-              <a href="#"
+              <a
+                href="#"
                 className="bg-[#8a6725] p-3 rounded-md uppercase text-sm font-bold  text-white  md:hidden block mt-2 w-[80%] mx-auto mb-2 text-center"
               >
                 Book Service
