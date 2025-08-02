@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/FAQ"
+                    to="/frequently-asked-questions"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                   >
                     FAQs
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/FAQ"
+                    to="/frequently-asked-questions"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                     onClick={toggleMenu}
                   >

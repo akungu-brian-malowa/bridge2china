@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import OurTeam from "./pages/OurTeam";
 import WhyChina from "./pages/WhyChina";
 import ShoppingGuide from "./pages/ShoppingGuide";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/why-china" element={<WhyChina />} />
           <Route path="/shopping-guide" element={<ShoppingGuide/>}/>
+          <Route path="/frequently-asked-questions" element={<Faq/>}/>
         </Routes>
         <Footer />
       </Router>
