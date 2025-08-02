@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <LuMessageSquare />
-                <a href="mailto:info@kiteautofix.com">info.vashathebridgetochina@gmail.com</a>
+                <a href="mailto:info.vashathebridgetochina@gmail.com">info.vashathebridgetochina@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
 
         {/* bottom section */}
         <p className="text-center text-sm font-semibold border-t-2 pt-5 mt-5">
-        &copy; {currentYear} Bridge To China. All rights reserved.
+        &copy; {currentYear} VashaTheBridgeToChina. All rights reserved.
         </p>
       </div>
     </motion.footer>
