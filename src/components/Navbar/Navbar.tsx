@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import React, { useState } from "react";
-import Logo from "../../assets/vasha.jpg";
+import Logo from "../../assets/vasha2.png";
 import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {

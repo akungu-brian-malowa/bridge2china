@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { LuMessageSquare } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { SlideLeft } from "../../animation/animate";
-import Logo from "../../assets/vasha.jpg";
+import Logo from "../../assets/vasha2.png";
 
 const Footer: React.FC = () => {
 
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
            
           </div>
           {/* Footer Links */}
-          <div className="grid grid-cols-2 gap-3 text-[#8a6725] ">
+          <div className="grid grid-cols-2 gap-3  ">
             <div className="space-y-4">
               <h1 className="text-xl font-semibold">About Us</h1>
               <ul className="text-sm space-y-4">
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           {/* Contact section */}
-          <div className="space-y-4 text-[#8a6725]">
+          <div className="space-y-4 ">
             <h1 className="text-xl font-semibold">Contact Us</h1>
             <ul className="text-base font-semibold space-y-4">
               <li className="flex items-center space-x-3">
