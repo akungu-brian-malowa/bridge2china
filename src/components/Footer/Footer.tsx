@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       initial="initial"
       whileInView="animate"
     >
-      <div className="container py-11">
+      <div className="container py-11 bg-[#e5d3c0]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company info section */}
           <div className="space-y-4 font-semibold">
