@@ -13,9 +13,9 @@ const WhatsApp: React.FC = () => {
   return (
     <div
       onClick={handleWhatsAppClick}
-      className="text-3xl text-white fixed bottom-10 right-10 hover:rotate-[360deg] duration-500 z-[99999] mix-blend-difference cursor-pointer"
+      className="text-3xl text-green-400 fixed bottom-10 bg-red-500 rounded-full p-2 right-10 hover:rotate-[360deg] duration-500 z-[99999] mix-blend-difference cursor-pointer"
     >
-      <FaWhatsapp color="green" />
+      <FaWhatsapp color="white" />
     </div>
   );
 };
