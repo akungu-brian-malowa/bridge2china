@@ -27,10 +27,10 @@ const slides: Slide[] = [
       "From travel arrangements to product sourcing, we make your China journey seamless.",
   },
   {
-    image: <img src={Logo} alt="slider" />,
-    title: "Trusted Partners in Trade",
+    image: Logo,
+    title: "",
     description:
-      "From travel arrangements to product sourcing, we make your China journey seamless.",
+      "",
   },
 ];
 
