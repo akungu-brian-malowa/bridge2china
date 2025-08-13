@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Logo from "../../assets/vashabanner.jpg";
 
 interface Slide {
-  image: string;
+  image: string | JSX.Element; // Allow image to be a string URL or JSX element
   title: string;
   description: string;
 }
@@ -21,6 +22,12 @@ const slides: Slide[] = [
   },
   {
     image: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg",
+    title: "Trusted Partners in Trade",
+    description:
+      "From travel arrangements to product sourcing, we make your China journey seamless.",
+  },
+  {
+    image: <img src={Logo} alt="slider" />,
     title: "Trusted Partners in Trade",
     description:
       "From travel arrangements to product sourcing, we make your China journey seamless.",
