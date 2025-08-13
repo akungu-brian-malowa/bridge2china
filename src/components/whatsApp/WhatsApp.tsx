@@ -13,7 +13,7 @@ const WhatsApp: React.FC = () => {
   return (
     <div
       onClick={handleWhatsAppClick}
-      className="text-3xl text-green-400 fixed bottom-10 bg-red-500 rounded-full md:p-2 p-1 right-10 hover:rotate-[360deg] duration-500 z-[99999] mix-blend-difference cursor-pointer"
+      className="text-3xl text-green-400 fixed bottom-10 bg-green-500 rounded-full z-50 md:p-2 p-1 right-10 hover:rotate-[360deg] duration-500  cursor-pointer"
     >
       <FaWhatsapp color="white" />
     </div>
