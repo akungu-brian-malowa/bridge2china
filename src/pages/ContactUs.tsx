@@ -13,6 +13,7 @@ import {
   FaShoppingCart,
 } from 'react-icons/fa';
 import { FaQuoteLeft } from 'react-icons/fa6';
+import { SiWhatsapp } from 'react-icons/si';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -130,6 +131,9 @@ const ContactUs: React.FC = () => {
                 <a href="https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaWhatsapp color='green'/>
                 </a>
+                {/* <a href="https://whatsapp.com/channel/0029VbB0Oxv0gcfFFV0rZY2W" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                  <SiWhatsapp  color='green'/>
+                </a> */}
               </div>
             </div>
           </div>
