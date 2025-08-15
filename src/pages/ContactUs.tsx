@@ -13,7 +13,7 @@ import {
   FaShoppingCart,
 } from 'react-icons/fa';
 import { FaQuoteLeft } from 'react-icons/fa6';
-import { SiWhatsapp } from 'react-icons/si';
+// import { SiWhatsapp } from 'react-icons/si';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({
