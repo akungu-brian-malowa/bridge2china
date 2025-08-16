@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
                     to="/why-china"
                     className="text-black font-bold hover:text-gray-500 transition-colors"
                   >
-                    Why India?
+                    Why China?
                   </Link>
                 </li>
                 <li>
