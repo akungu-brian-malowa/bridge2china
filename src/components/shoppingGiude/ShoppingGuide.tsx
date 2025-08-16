@@ -15,9 +15,19 @@ const ShoppingGuide: React.FC = () => {
     "Business Supplies"
   ];
 
+  // Added URLs for each shopping platform
   const whereToShop = [
-    "Alibaba", "AliExpress", "Shein", "eBay", "Amazon", 
-    "JD", "Banggood", "Taobao", "Tmall", "Etsy", "Light in Thebox"
+    { name: "Alibaba", url: "https://www.alibaba.com" },
+    { name: "AliExpress", url: "https://www.aliexpress.com" },
+    { name: "Shein", url: "https://www.shein.com" },
+    { name: "eBay", url: "https://www.ebay.com" },
+    { name: "Amazon", url: "https://www.amazon.com" },
+    { name: "JD", url: "https://www.jd.com" },
+    { name: "Banggood", url: "https://www.banggood.com" },
+    { name: "Taobao", url: "https://www.taobao.com" },
+    { name: "Tmall", url: "https://www.tmall.com" },
+    { name: "Etsy", url: "https://www.etsy.com" },
+    { name: "Light in Thebox", url: "https://www.lightinthebox.com" }
   ];
 
   return (
@@ -47,12 +57,15 @@ const ShoppingGuide: React.FC = () => {
             <h3 className="text-2xl font-bold text-black mb-6">Where to Shop</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
               {whereToShop.map((platform, index) => (
-                <div 
+                <a 
                   key={index} 
-                  className="bg-white text-md border-[#8a6725] border-[1px] rounded-lg p-2 text-center hover:shadow-lg transition-shadow"
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-md border-[#8a6725] border-[1px] rounded-lg p-2 text-center hover:shadow-lg transition-shadow hover:bg-[#f9f5eb]"
                 >
-                  <span className="text-gray-700 font-medium">{platform}</span>
-                </div>
+                  <span className="text-gray-700 font-medium">{platform.name}</span>
+                </a>
               ))}
             </div>
           </div>

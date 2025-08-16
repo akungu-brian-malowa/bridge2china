@@ -4,7 +4,7 @@ import Hero from "../components/Hero/Hero";
 import WhatsApp from "../components/whatsApp/WhatsApp";
 import Services from "../components/services/Services";
 import WhyChina from "../components/whyChina/WhyChina";
-import ShoppingGuide from "../components/shoppingGiude.tsx/ShoppingGuide";
+import ShoppingGuide from "../components/shoppingGiude/ShoppingGuide";
 import CallToAction from "../components/call2Action.tsx/CallToAction";
 import AboutUs from "../components/aboutus/Aboutus";
 
