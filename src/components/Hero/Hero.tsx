@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[50vh] max-h-[55vh] w-full overflow-hidden md:mt-20 md:pt-4  mt-4 md:max-w-7xl md:mx-auto"
+      className="relative flex items-center justify-center min-h-[50vh] max-h-[65vh] w-full overflow-hidden md:mt-24 md:pt-4  mt-10 md:max-w-7xl md:mx-auto"
     >
       {/* Background image with fade animation */}
       <div
