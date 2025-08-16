@@ -41,55 +41,59 @@ const AboutUs = () => {
       </div>
 
       {/* Our Story */}
-      <section className="py-6 px-4 md:px-8 md:mb-4">
-  <div className="container mx-auto max-w-6xl">
-    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8a6725] block md:hidden">
-      Our Story
-    </h2>
-    <div className="flex flex-col md:flex-row items-center gap-12">
-      <div className="md:w-1/2">
-        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
-          <img
-            alt="our"
-            src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg"
-            className="object-cover h-full w-full rounded-md"
-          />
-        </div>
-      </div>
-      <div className="md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725] md:block hidden">
-          Our Story
-        </h2>
-        <p className="text-md md:text-lg mb-4 text-center md:text-start">
-          Founded in 2018, VashaThePlace began as a small consultancy
-          helping Entrepreneurs navigate the complexities of
-          importing goods from China. What started as a passion project
-          quickly grew into a full-service agency as we recognized the
-          growing demand for reliable China to the other parts of the
-          world trade facilitation.
-        </p>
-        <p className="text-md md:text-lg mb-4 text-center md:text-start">
-          Today, we've helped over 500 businesses and individuals
-          successfully establish connections with Chinese suppliers,
-          source quality products, and navigate the import/export process
-          with confidence.
-        </p>
-        <div className="flex flex-wrap gap-4 mt-8">
-          <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
-            500+ Clients Served
-          </div>
-          <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
-            7 Team Members
-          </div>
-          <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
-            20+ Industries
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      <section className="md:py-6 py-2 px-4 md:px-8 md:mb-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8a6725] block text-center">
+            Our Story
+          </h2>
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
+                <img
+                  alt="our"
+                  src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg"
+                  className="object-cover h-full w-full rounded-md"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2">
+               {/* <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#8a6725] md:block hidden bg-red-500">
+                Our Story
+              </h2> */}
+            <div className="md:w-full">
+             
+              <p className="text-md md:text-lg mb-4 text-center md:text-start">
+                Founded in 2018, VashaThePlace began as a small consultancy
+                helping Entrepreneurs navigate the complexities of importing
+                goods from China. What started as a passion project quickly grew
+                into a full-service agency as we recognized the growing demand
+                for reliable China to the other parts of the world trade
+                facilitation.
+              </p>
+              <p className="text-md md:text-lg mb-4 text-center md:text-start">
+                Today, we've helped over 500 businesses and individuals
+                successfully establish connections with Chinese suppliers,
+                source quality products, and navigate the import/export process
+                with confidence.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-4">
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
+                  500+ Clients Served
+                </div>
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
+                  7 Team Members
+                </div>
+                <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
+                  20+ Industries
+                </div>
+              </div>
+            </div>
 
+            </div>
+          
+          </div>
+        </div>
+      </section>
 
       {/* Our Mission */}
       <section className="py-16 px-4 md:px-8 bg-[#e5d3c0]">

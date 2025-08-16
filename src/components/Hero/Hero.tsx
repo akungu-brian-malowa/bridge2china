@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
     >
       {/* Background image with fade animation */}
       <div
-        className="absolute inset-0 bg-cover bg-center z-0 transition-opacity duration-1000"
+        className="absolute inset-0 bg-cover bg-center z-0 h-full transition-opacity duration-1000"
         style={{
           backgroundImage: `url('${slides[currentSlide].image}')`,
         }}
