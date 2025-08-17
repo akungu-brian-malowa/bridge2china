@@ -58,7 +58,8 @@ const ShoppingGuide: React.FC = () => {
           
           {/* Where to Shop */}
           <div className="bg-white rounded-xl p-6 ">
-            <h3 className="text-2xl font-bold text-black mb-6">Where to Shop</h3>
+            <h3 className="text-2xl font-bold text-black mb-2">Where to Shop</h3>
+            <h3 className="text-sm font-bold text-gray-400 mb-4">Click to Show</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
               {whereToShop.map((platform, index) => (
                 <a 
