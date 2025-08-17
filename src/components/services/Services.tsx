@@ -1,8 +1,14 @@
 // src/components/Services.tsx
 import React from 'react';
+import { 
+  FaPassport, 
+  FaGlobeAsia, 
+  FaSearch, 
+  FaBoxOpen,
+} from 'react-icons/fa';
 
 interface ServiceCardProps {
-  icon: string;
+  icon: string | React.ReactNode;
   title: string;
   description: string;
 }
@@ -13,7 +19,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) =
       <div className=" bg-[#8a6725]  text-white p-5 flex justify-center">
         <span className="text-4xl text-white">{icon}</span>
       </div>
-      <div className="p-6">
+      <div className="p-4">
         <h3 className="text-md md:text-xl font-bold text-black mb-3">{title}</h3>
         <p className="text-gray-700">{description}</p>
       </div>
@@ -24,22 +30,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) =
 const Services: React.FC = () => {
   const servicesData = [
     {
-      icon: "🛂",
+      icon: <FaPassport className="text-2xl text-white" />,
       title: "China Visa Booking Assistance",
       description: "We help clients with smooth and fast China visa application processes to ensure timely travel."
     },
     {
-      icon: "🌐",
+      icon: <FaGlobeAsia className="text-2xl text-white" />,
       title: "Guided Access to China Market",
       description: "We support individuals and businesses in exploring the China market for shopping, sourcing, or investment opportunities."
     },
     {
-      icon: "🔍",
+      icon: <FaSearch className="text-2xl text-white" />,
       title: "Product Sourcing & Quality Inspection",
       description: "We assist in identifying reliable suppliers and ensure quality before shipping to avoid losses."
     },
     {
-      icon: "📦",
+      icon: <FaBoxOpen className="text-2xl text-white" />,
       title: "Personal Buying & Shipping Assistance",
       description: "We handle the buying process for you and ensure safe delivery to your location."
     }
