@@ -27,7 +27,10 @@ const ShoppingGuide: React.FC = () => {
     { name: "Taobao", url: "https://www.taobao.com" },
     { name: "Tmall", url: "https://www.tmall.com" },
     { name: "Etsy", url: "https://www.etsy.com" },
-    { name: "Light in Thebox", url: "https://www.lightinthebox.com" }
+    { name: "Light in Thebox", url: "https://www.lightinthebox.com" },
+    { name: "1688", url: "https://www.1688.com" },
+    { name: "DHgate", url: "https://www.dhgate.com" },
+    { name: "Made In China", url: "https://www.madeinchina.com" },
   ];
 
   return (

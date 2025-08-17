@@ -46,7 +46,7 @@ const ShoppingGuide = () => {
     { name: 'DHgate', type: 'Wholesale Marketplace', bestFor: 'Small business owners', url: 'https://www.dhgate.com', logo: '/logos/dhgate.png' },
     { name: 'Banggood', type: 'Retailer', bestFor: 'Gadgets & electronics', url: 'https://www.banggood.com', logo: '/logos/banggood.png' },
     { name: '1688', type: 'Wholesale Marketplace', bestFor: 'Gadgets & electronics', url: 'https://www.1688.com', logo: '/logos/banggood.png' },
-    { name: 'Made In China', type: 'E-commerce Platform', bestFor: 'Gadgets & electronics', url: 'https://www.madeinchina.com', logo: '/logos/banggood.png' },
+    { name: 'Made In China', type: 'Supplier', bestFor: 'Gadgets & electronics', url: 'https://www.madeinchina.com', logo: '/logos/banggood.png' },
     { name: 'dhgate', type: 'E-commerce Platform', bestFor: 'Gadgets & electronics', url: 'https://www.dhgate.com', logo: '/logos/banggood.png' }
   ];
 
