@@ -46,18 +46,19 @@ const Footer: React.FC = () => {
               <h1 className="text-xl font-semibold">About Us</h1>
               <ul className="text-sm space-y-4">
                 <li><a href="#">Our Story</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/why-china">Why China?</a></li>
+               
               </ul>
             </div>
             <div className="space-y-4">
               <h1 className="text-xl font-semibold">Support</h1>
               <ul className="text-sm space-y-4">
-                <li><a href="#">FAQ's</a></li>
-                <li><a href="#">Service Booking</a></li>
-                <li><a href="#">Return Policy</a></li>
-                <li><a href="#">Warranty Information</a></li>
+                <li><a href="/frequently-asked-questions">FAQs</a></li>
+                <li><a href="/services">Service Booking</a></li>
+                <li><a href="/shopping-guide">Shopping Guide</a></li>
+                
+                
               </ul>
             </div>
           </div>
