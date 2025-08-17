@@ -7,12 +7,13 @@ const ShoppingGuide: React.FC = () => {
     "Fashion & Apparel",
     "Beauty & Personal Care",
     "Home & Kitchen Items",
-    "Baby & Kids Products",
     "Bags & Travel Gear",
-    "Watches & Jewelry",
     "Office & Stationery",
-    "Gift Items & Party Supplies",
-    "Business Supplies"
+    "Business Supplies",
+    "Sports & Outdoor Equipment",
+    "Health & Wellness Products",
+    "Heavy Machinaries & Equipment",
+    "Furnitures"
   ];
 
   // Added URLs for each shopping platform
