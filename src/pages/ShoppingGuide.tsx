@@ -44,7 +44,10 @@ const ShoppingGuide = () => {
     { name: 'Taobao', type: 'C2C Marketplace', bestFor: 'Unique items & crafts', url: 'https://www.taobao.com', logo: '/logos/taobao.png' },
     { name: 'Tmall', type: 'B2C Marketplace', bestFor: 'Branded products', url: 'https://www.tmall.com', logo: '/logos/tmall.png' },
     { name: 'DHgate', type: 'Wholesale Marketplace', bestFor: 'Small business owners', url: 'https://www.dhgate.com', logo: '/logos/dhgate.png' },
-    { name: 'Banggood', type: 'Retailer', bestFor: 'Gadgets & electronics', url: 'https://www.banggood.com', logo: '/logos/banggood.png' }
+    { name: 'Banggood', type: 'Retailer', bestFor: 'Gadgets & electronics', url: 'https://www.banggood.com', logo: '/logos/banggood.png' },
+    { name: '1688', type: 'Wholesale Marketplace', bestFor: 'Gadgets & electronics', url: 'https://www.1688.com', logo: '/logos/banggood.png' },
+    { name: 'Made In China', type: 'E-commerce Platform', bestFor: 'Gadgets & electronics', url: 'https://www.madeinchina.com', logo: '/logos/banggood.png' },
+    { name: 'dhgate', type: 'E-commerce Platform', bestFor: 'Gadgets & electronics', url: 'https://www.dhgate.com', logo: '/logos/banggood.png' }
   ];
 
   // Shopping tips
@@ -148,9 +151,9 @@ const ShoppingGuide = () => {
                         {platform.name.substring(0, 2)}
                       </span>
                     </div> */}
-                    <h3 className="text-lg font-bold text-[#8a6725]">{platform.name}</h3>
+                    <h3 className="text-md font-bold text-[#8a6725]">{platform.name}</h3>
                   </div>
-                  <span className="bg-[#e5d3c0] text-[#8a6725] px-2 py-1 rounded text-xs font-bold">
+                  <span className="bg-[#e5d3c0] text-[#8a6725] px-1 py-1 rounded text-xs font-bold">
                     {platform.type}
                   </span>
                 </div>
