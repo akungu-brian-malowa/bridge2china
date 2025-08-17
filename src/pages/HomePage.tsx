@@ -10,7 +10,7 @@ import AboutUs from "../components/aboutus/Aboutus";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="overflow-x-hidden bg-white">
+    <div className="overflow-x-hidden bg-white md:w-[90%]  mx-auto">
       <Hero />
       <AboutUs/>
       <Services />
