@@ -35,16 +35,16 @@ const ShoppingGuide = () => {
     }
   ];
 
-  // Where to shop
+  // Where to shop - updated with URLs and logos
   const platforms = [
-    { name: 'Alibaba', type: 'B2B Marketplace', bestFor: 'Wholesale purchases' },
-    { name: 'AliExpress', type: 'Retail Marketplace', bestFor: 'Small quantity orders' },
-    { name: 'Shein', type: 'Fashion Retailer', bestFor: 'Trendy clothing' },
-    { name: 'JD.com', type: 'E-commerce Platform', bestFor: 'Electronics & appliances' },
-    { name: 'Taobao', type: 'C2C Marketplace', bestFor: 'Unique items & crafts' },
-    { name: 'Tmall', type: 'B2C Marketplace', bestFor: 'Branded products' },
-    { name: 'DHgate', type: 'Wholesale Marketplace', bestFor: 'Small business owners' },
-    { name: 'Banggood', type: 'Retailer', bestFor: 'Gadgets & electronics' }
+    { name: 'Alibaba', type: 'B2B Marketplace', bestFor: 'Wholesale purchases', url: 'https://www.alibaba.com', logo: '/logos/alibaba.png' },
+    { name: 'AliExpress', type: 'Retail Marketplace', bestFor: 'Small quantity orders', url: 'https://www.aliexpress.com', logo: '/logos/aliexpress.png' },
+    { name: 'Shein', type: 'Fashion Retailer', bestFor: 'Trendy clothing', url: 'https://www.shein.com', logo: '/logos/shein.png' },
+    { name: 'JD.com', type: 'E-commerce Platform', bestFor: 'Electronics & appliances', url: 'https://www.jd.com', logo: '/logos/jd.png' },
+    { name: 'Taobao', type: 'C2C Marketplace', bestFor: 'Unique items & crafts', url: 'https://www.taobao.com', logo: '/logos/taobao.png' },
+    { name: 'Tmall', type: 'B2C Marketplace', bestFor: 'Branded products', url: 'https://www.tmall.com', logo: '/logos/tmall.png' },
+    { name: 'DHgate', type: 'Wholesale Marketplace', bestFor: 'Small business owners', url: 'https://www.dhgate.com', logo: '/logos/dhgate.png' },
+    { name: 'Banggood', type: 'Retailer', bestFor: 'Gadgets & electronics', url: 'https://www.banggood.com', logo: '/logos/banggood.png' }
   ];
 
   // Shopping tips
@@ -109,7 +109,7 @@ const ShoppingGuide = () => {
         </div>
       </section>
 
-      {/* Where to Shop Section */}
+      {/* Where to Shop Section - Updated with links and logos */}
       <section className="py-16 bg-[#e5d3c0] px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -124,12 +124,32 @@ const ShoppingGuide = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {platforms.map((platform, index) => (
-              <div 
+              <a 
                 key={index} 
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:bg-[#f9f5eb]"
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-bold text-[#8a6725]">{platform.name}</h3>
+                  <div className="flex items-center">
+                    {/* <div className="w-10 h-10 mr-3 flex items-center justify-center">
+                      <img 
+                        src={platform.logo} 
+                        alt={platform.name} 
+                        className="h-full w-full object-contain"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                      <span className={`hidden text-xs font-bold text-[#8a6725]`}>
+                        {platform.name.substring(0, 2)}
+                      </span>
+                    </div> */}
+                    <h3 className="text-lg font-bold text-[#8a6725]">{platform.name}</h3>
+                  </div>
                   <span className="bg-[#e5d3c0] text-[#8a6725] px-2 py-1 rounded text-xs font-bold">
                     {platform.type}
                   </span>
@@ -141,7 +161,7 @@ const ShoppingGuide = () => {
                   ))}
                   <span className="ml-2 text-gray-600">4.8</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
           
