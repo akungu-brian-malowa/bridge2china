@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../assets/vashabanner.jpg";
+import Banner2 from "../../assets/vashab2.jpg";
+import Banner1 from "../../assets/vashab1.jpg";
+import Banner from "../../assets/vashab.jpg";
 
 interface Slide {
   image: string | JSX.Element; // Allow image to be a string URL or JSX element
@@ -8,26 +10,38 @@ interface Slide {
 }
 
 const slides: Slide[] = [
+  // {
+  //   image: "https://images.pexels.com/photos/2873687/pexels-photo-2873687.jpeg",
+  //   title: "Business Support & International Trade Services",
+  //   description:
+  //     "Bridge To China, Vasha The Place is your trusted gateway to opportunities and business networks in China.",
+  // },
+  // {
+  //   image: "https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg",
+  //   title: "Your Gateway to Chinese Markets",
+  //   description:
+  //     "Whether you're sourcing products or expanding your business, we guide you every step of the way.",
+  // },
+  // {
+  //   image: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg",
+  //   title: "Trusted Partners in Trade",
+  //   description:
+  //     "From travel arrangements to product sourcing, we make your China journey seamless.",
+  // },
   {
-    image: "https://images.pexels.com/photos/2873687/pexels-photo-2873687.jpeg",
-    title: "Business Support & International Trade Services",
+    image: Banner2,
+    title: "",
     description:
-      "Bridge To China, Vasha The Place is your trusted gateway to opportunities and business networks in China.",
+      "",
   },
   {
-    image: "https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg",
-    title: "Your Gateway to Chinese Markets",
+    image: Banner1,
+    title: "",
     description:
-      "Whether you're sourcing products or expanding your business, we guide you every step of the way.",
+      "",
   },
   {
-    image: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg",
-    title: "Trusted Partners in Trade",
-    description:
-      "From travel arrangements to product sourcing, we make your China journey seamless.",
-  },
-  {
-    image: Logo,
+    image: Banner,
     title: "",
     description:
       "",
@@ -70,7 +84,7 @@ const Hero: React.FC = () => {
             {slides[currentSlide].description}
           </p>
 
-          <div className="mt-4 sm:mt-6">
+          {/* <div className="mt-4 sm:mt-6">
             <a
               href="#contact"
               className="inline-block bg-[#8a6725] hover:bg-[#a07a38] text-[#f8f4f0] font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#8a6725] focus:ring-opacity-50"
@@ -80,9 +94,9 @@ const Hero: React.FC = () => {
             >
               BOOK OUR SERVICES HERE!
             </a>
-          </div>
+          </div> */}
 
-          {/* Slide indicators */}
+          {/* Slide indicators
           <div className="mt-10 flex justify-center space-x-3">
             {slides.map((_, i) => (
               <div
@@ -95,12 +109,12 @@ const Hero: React.FC = () => {
                 }`}
               ></div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <svg
           className="w-6 h-6 text-[#8a6725]"
           fill="none"
@@ -114,7 +128,7 @@ const Hero: React.FC = () => {
             d="M19 14l-7 7m0 0l-7-7m7 7V3"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 };
