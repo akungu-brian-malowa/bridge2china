@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Banner2 from "../../assets/vashab2.jpg";
-import Banner1 from "../../assets/vashab1.jpg";
+import Banner2 from "../../assets/banner5.jpg";
+import Banner1 from "../../assets/banner6.jpg";
 import Banner from "../../assets/vashab.jpg";
 
 interface Slide {
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
           backgroundImage: `url('${slides[currentSlide].image}')`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.7)] via-[rgba(0,0,0,0.4)] to-[rgba(229,211,192,0.3)]"></div>
+       
       </div>
 
       {/* Content */}
