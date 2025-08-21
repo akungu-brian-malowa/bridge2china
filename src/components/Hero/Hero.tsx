@@ -3,133 +3,129 @@ import Banner2 from "../../assets/banner5.jpg";
 import Banner1 from "../../assets/banner8.png";
 import Banner from "../../assets/banner9.png";
 
-
 interface Slide {
-  image: string | JSX.Element; // Allow image to be a string URL or JSX element
+  image: string;
   title: string;
   description: string;
 }
 
+// Sample images - replace with your actual image paths
 const slides: Slide[] = [
-  // {
-  //   image: "https://images.pexels.com/photos/2873687/pexels-photo-2873687.jpeg",
-  //   title: "Business Support & International Trade Services",
-  //   description:
-  //     "Bridge To China, Vasha The Place is your trusted gateway to opportunities and business networks in China.",
-  // },
-  // {
-  //   image: "https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg",
-  //   title: "Your Gateway to Chinese Markets",
-  //   description:
-  //     "Whether you're sourcing products or expanding your business, we guide you every step of the way.",
-  // },
-  // {
-  //   image: "https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg",
-  //   title: "Trusted Partners in Trade",
-  //   description:
-  //     "From travel arrangements to product sourcing, we make your China journey seamless.",
-  // },
   {
     image: Banner2,
     title: "",
-    description:
-      "",
+    description: "",
   },
   {
     image: Banner1,
     title: "",
-    description:
-      "",
+    description: "",
   },
   {
     image: Banner,
     title: "",
-    description:
-      "",
+    description: "",
   },
 ];
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[50vh] max-h-[65vh] w-full overflow-hidden md:mt-24 md:pt-4  mt-10 md:max-w-7xl md:mx-auto"
+      className="relative flex items-center justify-center min-h-[60vh] w-full overflow-hidden mt-10 md:mt-24 md:max-w-7xl md:mx-auto rounded-lg shadow-xl bg-gray-100"
     >
-      {/* Background image with fade animation */}
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0 h-full transition-opacity duration-1000"
-        style={{
-          backgroundImage: `url('${slides[currentSlide].image}')`,
-        }}
-      >
-       
-      </div>
+      {/* Slider container */}
+      <div className="relative w-full h-full overflow-hidden rounded-lg" style={{ height: "60vh" }}>
+        {/* Slides */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            <div className="flex items-center justify-center h-full w-full">
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-full object-cover"
+              />
+              {(slide.title || slide.description) && (
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                  <div className="max-w-4xl mx-auto text-center">
+                    {slide.title && (
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                        {slide.title}
+                      </h2>
+                    )}
+                    {slide.description && (
+                      <p className="text-lg text-white/90">
+                        {slide.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
 
-      {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center transition-all duration-1000">
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold mb-4 md:mb-6 uppercase tracking-tight">
-            <span className="block text-[#e5d3c0]">{slides[currentSlide].title}</span>
-          </h1>
+        {/* Navigation arrows */}
+        <button
+          onClick={goToPrevSlide}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 z-20"
+          aria-label="Previous slide"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={goToNextSlide}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 z-20"
+          aria-label="Next slide"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
 
-          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-6 md:mb-8 text-[#f8f4f0] font-medium leading-relaxed">
-            {slides[currentSlide].description}
-          </p>
-
-          {/* <div className="mt-4 sm:mt-6">
-            <a
-              href="#contact"
-              className="inline-block bg-[#8a6725] hover:bg-[#a07a38] text-[#f8f4f0] font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#8a6725] focus:ring-opacity-50"
-              style={{
-                boxShadow: "0 4px 14px rgba(138, 103, 37, 0.4)",
-              }}
-            >
-              BOOK OUR SERVICES HERE!
-            </a>
-          </div> */}
-
-          {/* Slide indicators
-          <div className="mt-10 flex justify-center space-x-3">
-            {slides.map((_, i) => (
-              <div
-                key={i}
-                onClick={() => setCurrentSlide(i)}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
-                  i === currentSlide
-                    ? "bg-[#8a6725] opacity-100"
-                    : "bg-[#8a6725] opacity-50"
-                }`}
-              ></div>
-            ))}
-          </div> */}
+        {/* Slide indicators */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentSlide ? "bg-white" : "bg-white/50"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-        <svg
-          className="w-6 h-6 text-[#8a6725]"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          ></path>
-        </svg>
-      </div> */}
     </section>
   );
 };
