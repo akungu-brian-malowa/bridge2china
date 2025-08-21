@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white text-[#333] max-w-7xl mx-auto">
       {/* Hero Section */}
-      <div className="relative py-16 px-4 md:px-8 overflow-hidden">
+      <div className="relative py-16 px-1 md:px-8 overflow-hidden">
         <div className="absolute inset-0 "></div>
         <div className="container mx-auto max-w-6xl relative z-10">
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-[#8a6725]">
