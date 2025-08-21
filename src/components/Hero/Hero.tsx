@@ -52,10 +52,10 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative w-full overflow-hidden bg-gray-100 rounded-lg shadow-xl mt-14 md:mt-24 md:max-w-7xl md:mx-auto"
+      className="relative w-full overflow-hidden bg-gray-100 md:rounded-lg shadow-xl mt-14 md:mt-24 md:max-w-7xl md:mx-auto"
     >
-      {/* Slider container */}
-      <div className="relative w-full overflow-hidden rounded-lg aspect-video md:aspect-[21/9]">
+      {/* Slider container with increased height on mobile */}
+      <div className="relative w-full overflow-hidden md:rounded-lg h-[35vh] sm:h-[70vh] md:h-[60vh] lg:aspect-[21/9] lg:h-auto">
         {/* Slides */}
         {slides.map((slide, index) => (
           <div
@@ -65,7 +65,6 @@ const Hero: React.FC = () => {
             }`}
           >
             <div className="relative flex items-center justify-center w-full h-full">
-              {/* Responsive image with multiple sizes */}
               <img
                 src={slide.image}
                 alt={slide.title}
@@ -73,16 +72,16 @@ const Hero: React.FC = () => {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px"
               />
               
-              {/* Text overlay */}
+              {/* Text overlay with improved mobile responsiveness */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/30">
                 <div className="px-4 mx-auto max-w-[90%] md:max-w-4xl">
                   {slide.title && (
-                    <h2 className="mb-2 text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl sm:mb-4 drop-shadow-md">
+                    <h2 className="mb-2 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-md">
                       {slide.title}
                     </h2>
                   )}
                   {slide.description && (
-                    <p className="text-sm text-white/90 sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-[90%] mx-auto sm:max-w-[80%] drop-shadow-md">
+                    <p className="text-base text-white/90 sm:text-lg md:text-xl lg:text-2xl max-w-[90%] mx-auto sm:max-w-[80%] drop-shadow-md">
                       {slide.description}
                     </p>
                   )}
@@ -92,35 +91,35 @@ const Hero: React.FC = () => {
           </div>
         ))}
 
-        {/* Navigation arrows */}
+        {/* Navigation arrows with better mobile positioning */}
         <button
           onClick={goToPrevSlide}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all duration-300 z-20 sm:left-4 sm:p-3"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 z-20 sm:left-4"
           aria-label="Previous slide"
         >
-          <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           onClick={goToNextSlide}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all duration-300 z-20 sm:right-4 sm:p-3"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 z-20 sm:right-4"
           aria-label="Next slide"
         >
-          <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
 
-        {/* Slide indicators */}
-        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20 sm:bottom-4 sm:space-x-3">
+        {/* Slide indicators with better mobile visibility */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`transition-all duration-300 rounded-full ${
-                index === currentSlide ? "bg-white w-6 sm:w-8" : "bg-white/50 w-2 h-2 sm:w-3 sm:h-3"
-              } h-2 sm:h-3`}
+              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                index === currentSlide ? "bg-white" : "bg-white/50"
+              }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
