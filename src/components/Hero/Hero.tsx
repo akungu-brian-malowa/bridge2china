@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Banner2 from "../../assets/banner5.jpg";
 import Banner1 from "../../assets/banner6.jpg";
-import Banner from "../../assets/vashab.jpg";
+import Banner from "../../assets/banner7.jpg";
 
 interface Slide {
   image: string | JSX.Element; // Allow image to be a string URL or JSX element
