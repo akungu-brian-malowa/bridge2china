@@ -9,7 +9,6 @@ interface Slide {
   description: string;
 }
 
-// Sample images - replace with your actual image paths
 const slides: Slide[] = [
   {
     image: Banner2,
@@ -30,7 +29,6 @@ const slides: Slide[] = [
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,10 +52,10 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[60vh] w-full overflow-hidden mt-10 md:mt-24 md:max-w-7xl md:mx-auto rounded-lg shadow-xl bg-gray-100"
+      className="relative w-full overflow-hidden bg-gray-100 rounded-lg shadow-xl mt-14 md:mt-24 md:max-w-7xl md:mx-auto"
     >
       {/* Slider container */}
-      <div className="relative w-full h-full overflow-hidden rounded-lg" style={{ height: "60vh" }}>
+      <div className="relative w-full overflow-hidden rounded-lg aspect-video md:aspect-[21/9]">
         {/* Slides */}
         {slides.map((slide, index) => (
           <div
@@ -66,28 +64,30 @@ const Hero: React.FC = () => {
               index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
-            <div className="flex items-center justify-center h-full w-full">
+            <div className="relative flex items-center justify-center w-full h-full">
+              {/* Responsive image with multiple sizes */}
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px"
               />
-              {(slide.title || slide.description) && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                  <div className="max-w-4xl mx-auto text-center">
-                    {slide.title && (
-                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                        {slide.title}
-                      </h2>
-                    )}
-                    {slide.description && (
-                      <p className="text-lg text-white/90">
-                        {slide.description}
-                      </p>
-                    )}
-                  </div>
+              
+              {/* Text overlay */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/30">
+                <div className="px-4 mx-auto max-w-[90%] md:max-w-4xl">
+                  {slide.title && (
+                    <h2 className="mb-2 text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl sm:mb-4 drop-shadow-md">
+                      {slide.title}
+                    </h2>
+                  )}
+                  {slide.description && (
+                    <p className="text-sm text-white/90 sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-[90%] mx-auto sm:max-w-[80%] drop-shadow-md">
+                      {slide.description}
+                    </p>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         ))}
@@ -95,32 +95,32 @@ const Hero: React.FC = () => {
         {/* Navigation arrows */}
         <button
           onClick={goToPrevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 z-20"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all duration-300 z-20 sm:left-4 sm:p-3"
           aria-label="Previous slide"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           onClick={goToNextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 z-20"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all duration-300 z-20 sm:right-4 sm:p-3"
           aria-label="Next slide"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
 
         {/* Slide indicators */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20 sm:bottom-4 sm:space-x-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? "bg-white" : "bg-white/50"
-              }`}
+              className={`transition-all duration-300 rounded-full ${
+                index === currentSlide ? "bg-white w-6 sm:w-8" : "bg-white/50 w-2 h-2 sm:w-3 sm:h-3"
+              } h-2 sm:h-3`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
