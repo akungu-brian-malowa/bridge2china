@@ -41,7 +41,7 @@ const CallToAction: React.FC = () => {
               </div>
               <a
                 href="tel:+254721176973"
-                className="text-lg text-blue-600 hover:underline"
+                className="text-lg"
               >
                 +254 721 176 973
               </a>
