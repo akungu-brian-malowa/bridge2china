@@ -132,12 +132,13 @@ const Navbar: React.FC = () => {
         <div>
           {isMenuOpen && (
             <>
-              <nav className="md:hidden bg-white ">
+              <nav className="md:hidden bg-white py-2">
                 <ul className="flex flex-col py-2">
                 <li>
                   <Link
                     to="/why-china"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                    //className="text-black font-bold hover:text-gray-500 transition-colors"
+                    className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
                     onClick={toggleMenu}
                   >
                     Why China?
@@ -146,7 +147,7 @@ const Navbar: React.FC = () => {
                 <li>
                   <Link
                     to="/services"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
                     onClick={toggleMenu}
                   >
                     Services
@@ -155,7 +156,7 @@ const Navbar: React.FC = () => {
                 <li>
                   <Link
                     to="/frequently-asked-questions"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
                     onClick={toggleMenu}
                   >
                     FAQs
@@ -164,7 +165,7 @@ const Navbar: React.FC = () => {
                 <li>
                   <Link
                     to="/shopping-guide"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
                     onClick={toggleMenu}
                   >
                     Shopping Guide
@@ -173,7 +174,7 @@ const Navbar: React.FC = () => {
                 <li>
                   <Link
                     to="/contact-us"
-                    className="text-black font-bold hover:text-gray-500 transition-colors"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
                     onClick={toggleMenu}
                   >
                     Contact
