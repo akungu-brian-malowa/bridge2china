@@ -184,7 +184,7 @@ const Navbar: React.FC = () => {
               </nav>
 
               <a
-                href="#"
+                href="/services"
                 className="bg-[#8a6725] p-3 rounded-md uppercase text-sm font-bold  text-white  md:hidden block mt-2 w-[80%] mx-auto mb-2 text-center"
               >
                 Book Service
