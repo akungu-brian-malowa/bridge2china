@@ -134,7 +134,7 @@ const AboutUs = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 px-4 md:px-8">
+      <section className="py-16 px-4 md:px-1">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8a6725]">
@@ -226,12 +226,12 @@ const AboutUs = () => {
               personalized service.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-[#e5d3c0] text-[#8a6725] font-bold py-3 px-8 rounded-full hover:bg-[#d4c0aa] transition">
+              <a href="/contact-us" className="bg-[#e5d3c0] text-[#8a6725] font-bold py-3 px-8 rounded-full hover:bg-[#d4c0aa] transition">
                 Contact Us
-              </button>
-              <button className="bg-transparent border-2 border-[#e5d3c0] text-[#e5d3c0] font-bold py-3 px-8 rounded-full hover:bg-[#9e7a3a] transition">
+              </a>
+              <a href="/services" className="bg-transparent border-2 border-[#e5d3c0] text-[#e5d3c0] font-bold py-3 px-8 rounded-full hover:bg-[#9e7a3a] transition">
                 Our Services
-              </button>
+              </a>
             </div>
           </div>
         </div>
