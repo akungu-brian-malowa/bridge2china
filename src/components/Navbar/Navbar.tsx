@@ -28,9 +28,7 @@ const Navbar: React.FC = () => {
                   Bridge
                   <span className="text-red-700">To</span>China
                 </h3>
-                <h4 className="text-xs  font-semibold uppercase">
-                  Vasha The Place
-                </h4>
+              
               </div>
             </Link>
           </div>

@@ -23,8 +23,7 @@ const AboutUs = () => {
           <div className="bg-white rounded-2xl p-3 max-w-4xl mx-auto">
             <p className="text-md md:text-xl text-center italic">
               <span className="font-bold">
-                Bridge <span className="text-red-700">To</span>China
-                VashaThePlace{" "}
+                Bridge <span className="text-red-700">To</span>Chinaq
               </span>{" "}
               is your trusted gateway to the opportunities and business networks
               of China. We provide seamless, affordable, and reliable services

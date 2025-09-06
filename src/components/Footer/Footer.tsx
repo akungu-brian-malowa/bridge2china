@@ -32,9 +32,7 @@ const Footer: React.FC = () => {
                 Bridge
                 <span className="text-red-700">To</span>China
               </h3>
-              <h4 className="text-xs  font-semibold uppercase">
-                Vasha The Place
-              </h4>
+             
             </div>
           </div>
             <p>Nairobi, Kenya</p>
@@ -80,7 +78,7 @@ const Footer: React.FC = () => {
 
         {/* bottom section */}
         <p className="text-center text-sm font-semibold border-t-2 pt-5 mt-5">
-        &copy; {currentYear} VashaTheBridgeToChina. All rights reserved.
+        &copy; {currentYear} BridgeToChina.All rights reserved.
         </p>
       </div>
     </motion.footer>
