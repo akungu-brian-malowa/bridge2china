@@ -43,7 +43,7 @@ const CallToAction: React.FC = () => {
                 href="tel:+254721176973"
                 className="text-lg"
               >
-                +254 721 176 973
+                +254 702 588 778
               </a>
             </div>
 
@@ -65,7 +65,7 @@ const CallToAction: React.FC = () => {
                 </svg>
               </div>
               <span className="text-sm">
-                info.vashathebridgetochina@gmail.com
+                info.bridgetochina@gmail.com
               </span>
             </div>
           </div>
