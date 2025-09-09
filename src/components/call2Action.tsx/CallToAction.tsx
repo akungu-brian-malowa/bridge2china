@@ -16,7 +16,7 @@ const CallToAction: React.FC = () => {
 
           <p className="text-md md:text-xl mb-10">
             Take the guesswork out of doing business with China. From visa
-            support to sourcing and shipping, Bridge to China is your one-stop
+            support to sourcing and shipping, Bridge To China is your one-stop
             partner for navigating the Chinese market with confidence and
             ease—at a flat, affordable service fee.
           </p>
