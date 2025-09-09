@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Banner2 from "../../assets/banner5.jpg";
-import Banner1 from "../../assets/banner8.png";
+import Banner2 from "../../assets/bann.jpg";
+import Banner1 from "../../assets/ban.jpg";
 import Banner from "../../assets/banner9.png";
 
 interface Slide {
