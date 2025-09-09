@@ -47,7 +47,7 @@ const ContactUs: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/254721176973?text=Hello%20Vasha%20Team,%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
+      "https://wa.me/254702588778?text=Hello%20Vasha%20Team,%20I%20would%20like%20to%20learn%20more%20about%20your%20services",
       "_blank"
     );
   };
