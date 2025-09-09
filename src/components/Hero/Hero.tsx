@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="object-cover w-full h-full"
+                className="object-fit w-full h-full"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px"
               />
               
