@@ -230,7 +230,7 @@ const Faq = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <FaWhatsapp className="text-xl mr-4" />
-                  <span>+254 721 176 973</span>
+                  <span>+254 702 588 778</span>
                 </div>
                 <div className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
