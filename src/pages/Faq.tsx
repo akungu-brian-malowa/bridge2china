@@ -89,7 +89,7 @@ const Faq = () => {
       answer: "Our standard service fee is Ksh 10,000, which covers basic consultation and coordination. Additional fees depend on the services required (visa assistance, sourcing, inspections, etc.). We provide transparent pricing with no hidden fees."
     },
     {
-      question: "How do I get started with Vasha's services?",
+      question: "How do I get started with Bridge To China services?",
       answer: "Getting started is simple: 1) Contact us via phone, email, or WhatsApp, 2) Schedule a free consultation, 3) Share your requirements, and 4) We'll develop a customized service plan. No upfront payment is required until you approve the plan."
     },
     {
@@ -97,7 +97,7 @@ const Faq = () => {
       answer: "Yes, we have a dedicated team in Guangzhou, China's manufacturing hub. Our on-ground team speaks Mandarin and local dialects, understands Chinese business culture, and can visit factories, conduct inspections, and resolve issues quickly."
     },
     {
-      question: "What makes Vasha different from other China-Kenya facilitators?",
+      question: "What makes Bridge To China different from other China-Kenya facilitators?",
       answer: "Our unique value comes from: 1) Dual presence in Kenya and China, 2) End-to-end service coverage, 3) Cultural understanding, 4) Personalized approach, and 5) Quality assurance focus. We're not just facilitators - we're your trusted partners in China."
     }
   ];
