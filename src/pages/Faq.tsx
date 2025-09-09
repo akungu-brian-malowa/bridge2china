@@ -236,7 +236,7 @@ const Faq = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>info.vashathebridgetochina@gmail.com</span>
+                  <span>info.bridgetochina@gmail.com</span>
                 </div>
               </div>
               
@@ -278,7 +278,7 @@ const Faq = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to start your China journey?</h2>
           <p className="text-lg max-w-3xl mx-auto mb-8">
-            Let Vasha be your trusted bridge to opportunities in China. Contact us today to get started.
+            Let Bridge To China be your trusted bridge to opportunities in China. Contact us today to get started.
           </p>
           <button 
             className="bg-white text-[#8a6725] font-bold py-3 px-8 rounded-full hover:bg-[#f0e6d8] transition"

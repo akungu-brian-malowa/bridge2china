@@ -60,7 +60,7 @@ const Services: React.FC = () => {
           </h1>
           <div className="w-24 h-1 bg-[#8a6725] mx-auto mb-6"></div>
           <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700">
-            Vasha The Place offers comprehensive services to bridge the gap between Kenya and China's vast market opportunities
+          Bridge To China offers comprehensive services to bridge the gap between Kenya and China's vast market opportunities
           </p>
         </div>
         
@@ -153,7 +153,7 @@ const Services: React.FC = () => {
             <FaQuoteLeft className="text-4xl text-[#e5d3c0] mr-4" />
             <div>
               <p className="text-lg italic text-gray-700 mb-4">
-                "Vasha The Place made our expansion into the Chinese market seamless. Their expertise in product sourcing and quality inspection saved us time and money. The team's dedication to our success was evident throughout the entire process."
+                "Bridge To China made our expansion into the Chinese market seamless. Their expertise in product sourcing and quality inspection saved us time and money. The team's dedication to our success was evident throughout the entire process."
               </p>
               <div className="flex items-center">
                 <div className="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-12 mr-4" />
