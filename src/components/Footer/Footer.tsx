@@ -66,11 +66,11 @@ const Footer: React.FC = () => {
             <ul className="text-base font-semibold space-y-4">
               <li className="flex items-center space-x-3">
                 <FaPhone />
-                <a href="#">+254 721 176 973</a>
+                <a href="#">+254 702 588 778</a>
               </li>
               <li className="flex items-center space-x-3">
                 <LuMessageSquare />
-                <a href="mailto:info.vashathebridgetochina@gmail.com">info.vashathebridgetochina@gmail.com</a>
+                <a href="mailto:info.vashathebridgetochina@gmail.com">info.bridgetochina@gmail.com</a>
               </li>
             </ul>
           </div>

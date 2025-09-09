@@ -16,7 +16,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     <div className="bg-[#e5d3c0] rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
-      <div className=" bg-[#8a6725]  text-white p-5 flex justify-center">
+      <div className=" bg-[#8a6725]  text-white px-2 py-5 flex justify-center">
         <span className="text-4xl text-white">{icon}</span>
       </div>
       <div className="p-4">

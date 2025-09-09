@@ -88,7 +88,7 @@ const ContactUs: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+254 721 176 973</p>
+                  <p className="text-gray-600">+254 702 588 778</p>
                 </div>
               </div>
               
@@ -98,7 +98,7 @@ const ContactUs: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info.vashathebridgetochina@gmail.com</p>
+                  <p className="text-gray-600">info.bridgetochina@gmail.com</p>
                 </div>
               </div>
               
@@ -125,7 +125,7 @@ const ContactUs: React.FC = () => {
                 <a href="#"  title="Follow us on Instagram" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaInstagram color='pink' className='font-extrabold'/>
                 </a>
-                <a href="https://wa.me/721176973?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
+                <a href="https://wa.me/702588778?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services" onClick={handleWhatsAppClick} title="Chat with us on WhatsApp" className="bg-gray-200  hover:bg-gray-100 text-[#8a6725] hover:text-white p-3 rounded-full transition-colors duration-300">
                   <FaWhatsapp color='green'/>
                 </a>
               </div>
@@ -280,32 +280,7 @@ const ContactUs: React.FC = () => {
           </div>
         </div>
         
-        {/* FAQ Section */}
-        {/* <div className="mt-16 bg-white rounded-2xl shadow-xl p-8">
-          <h2 className="text-2xl font-bold text-[#8a6725] mb-6">Frequently Asked Questions</h2>
-          
-          <div className="space-y-4">
-            <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">How long does the visa process take?</h3>
-              <p className="mt-2 text-gray-600">Typically 5-10 business days, but we offer expedited services for urgent cases.</p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">Can you help with quality inspections?</h3>
-              <p className="mt-2 text-gray-600">Yes, we provide comprehensive quality inspection services before shipping to ensure product standards.</p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-4">
-              <h3 className="text-lg font-semibold text-gray-900">What are your service fees?</h3>
-              <p className="mt-2 text-gray-600">Our standard service fee is Ksh 10,000, with additional costs depending on the specific services required.</p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900">Do you handle shipping to Kenya?</h3>
-              <p className="mt-2 text-gray-600">Yes, we provide end-to-end shipping solutions including customs clearance and door-to-door delivery.</p>
-            </div>
-          </div>
-        </div> */}
+     
         
         {/* Testimonial Section */}
         <div className="mt-16 bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] rounded-2xl p-8 text-white">
