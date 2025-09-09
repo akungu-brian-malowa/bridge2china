@@ -136,21 +136,7 @@ const ShoppingGuide = () => {
               >
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center">
-                    {/* <div className="w-10 h-10 mr-3 flex items-center justify-center">
-                      <img 
-                        src={platform.logo} 
-                        alt={platform.name} 
-                        className="h-full w-full object-contain"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          target.nextElementSibling?.classList.remove('hidden');
-                        }}
-                      />
-                      <span className={`hidden text-xs font-bold text-[#8a6725]`}>
-                        {platform.name.substring(0, 2)}
-                      </span>
-                    </div> */}
+          
                     <h3 className="text-md font-bold text-[#8a6725]">{platform.name}</h3>
                   </div>
                   <span className="bg-[#e5d3c0] text-[#8a6725] px-1 py-1 rounded text-xs font-bold">
@@ -262,8 +248,8 @@ const ShoppingGuide = () => {
       <section className="py-16 bg-gradient-to-r from-[#8a6725] to-[#6a4f1d] text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Why Shop Through Vasha?
+            <h2 className="text-2xl md:text-2xl font-bold mb-4">
+              Why Shop Through Bridge To China?
             </h2>
             <div className="w-24 h-1 bg-[#e5d3c0] mx-auto"></div>
           </div>
@@ -298,9 +284,9 @@ const ShoppingGuide = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="text-5xl">📦</div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Ready to Start Shopping in China?</h3>
+                <h3 className="text-sm md:text-xl font-bold mb-3">Ready to Start Shopping in China?</h3>
                 <p className="mb-6">
-                  Let Vasha handle your China sourcing needs. Our local expertise and on-ground team 
+                  Let Bridge To China handle your China sourcing needs. Our local expertise and on-ground team 
                   ensure you get quality products at competitive prices with minimal hassle.
                 </p>
                 <button className="bg-[#8a6725] text-white font-bold py-3 px-8 rounded-full hover:bg-[#6a4f1d] transition">
@@ -319,7 +305,7 @@ const ShoppingGuide = () => {
             <div className="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24" />
             <div>
               <p className="text-lg italic text-gray-700 mb-4">
-                "Vasha completely transformed how we source products. Their team in China handled everything from 
+                "Bridge To China completely transformed how we source products. Their team in China handled everything from 
                 supplier vetting to quality control. We saved 25% on costs while improving product quality. 
                 The shipping process was seamless with no customs issues."
               </p>

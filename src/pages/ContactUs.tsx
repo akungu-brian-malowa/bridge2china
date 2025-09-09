@@ -57,11 +57,11 @@ const ContactUs: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#221d13] mb-4">
-            Contact <span className="text-[#6a4f1d]">Vasha The Place</span>
+            Contact <span className="text-[#6a4f1d]">Bridge To China</span>
           </h1>
           <div className="w-24 h-1 bg-[#8a6725] mx-auto mb-6"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Your trusted bridge to China. Get in touch with us for visa assistance, product sourcing, and market exploration.
+            Your trusted Bridge To China. Get in touch with us for visa assistance, product sourcing, and market exploration.
           </p>
         </div>
         
@@ -287,7 +287,7 @@ const ContactUs: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <FaQuoteLeft className="text-4xl text-[#e5d3c0] mx-auto mb-6" />
             <p className="text-lg md:text-xl italic mb-8">
-              "Vasha The Place transformed our sourcing experience. Their team in China handled everything from supplier identification to quality checks, saving us time and money. The shipping process was seamless, and the quality exceeded our expectations."
+              "Bridge To China transformed our sourcing experience. Their team in China handled everything from supplier identification to quality checks, saving us time and money. The shipping process was seamless, and the quality exceeded our expectations."
             </p>
             <div className="flex items-center justify-center">
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" />
