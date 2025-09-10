@@ -77,10 +77,19 @@ const Navbar: React.FC = () => {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <a
+                    href="/#"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
+                    onClick={toggleMenu}
+                  >
+                    Our Store
+                  </a>
+                </li>
               </ul>
             </nav>
             <a
-              href="#"
+              href="services"
               className="bg-[#8a6725] px-2 py-2 rounded-md uppercase text-sm font-bold  text-white hidden md:block"
             >
               Book Service
@@ -177,6 +186,15 @@ const Navbar: React.FC = () => {
                   >
                     Contact
                   </Link>
+                </li>
+                <li>
+                  <a
+                    href="/#"
+                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
+                    onClick={toggleMenu}
+                  >
+                    Our Store
+                  </a>
                 </li>
                 </ul>
               </nav>
