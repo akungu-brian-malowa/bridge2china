@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
                 <li>
                   <a
                     href="/#"
-                     className="px-6 py-3 font-bold text-sm mb-2 text-black hover:text-gray-500 transition-colors duration-200 w-full"
+                     className="text-black font-bold hover:text-gray-500 transition-colors mr-2"
                     onClick={toggleMenu}
                   >
                     Our Store
