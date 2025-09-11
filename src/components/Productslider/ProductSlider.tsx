@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star, Heart } from "lucide-react";
-//ShoppingCart,
 
 interface Product {
   id: number;
@@ -30,7 +29,7 @@ const products: Product[] = [
     id: 2,
     name: "Smartphone Pro Max",
     price: "KSh 89,999",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.8,
     reviews: 89,
     isNew: true
@@ -92,39 +91,74 @@ const ProductSlider = () => {
   const [current, setCurrent] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(4);
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Auto slide interval reference
+  const autoSlideRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 480) {
+      const width = window.innerWidth;
+      if (width < 480) {
         setItemsPerView(1);
-      } else if (window.innerWidth < 640) {
+        setIsMobile(true);
+      } else if (width < 640) {
         setItemsPerView(2);
-      } else if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else if (width < 768) {
         setItemsPerView(2);
-      } else if (window.innerWidth < 1024) {
+        setIsMobile(true);
+      } else if (width < 1024) {
         setItemsPerView(3);
+        setIsMobile(false);
       } else {
         setItemsPerView(4);
+        setIsMobile(false);
       }
     };
 
     handleResize();
     window.addEventListener('resize', handleResize);
     
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (autoSlideRef.current) clearInterval(autoSlideRef.current);
+    };
   }, []);
 
-  const nextSlide = () => {
-    setCurrent((prev) => 
+  // Auto slide effect for mobile
+  useEffect(() => {
+    if (isMobile && !isHovered) {
+      // Clear any existing interval
+      if (autoSlideRef.current) clearInterval(autoSlideRef.current);
+      
+      // Set new interval for auto sliding
+      const interval = setInterval(() => {
+        setCurrent(prev => 
+          prev + 1 >= Math.ceil(products.length / itemsPerView) ? 0 : prev + 1
+        );
+      }, 3000); // Slide every 3 seconds
+      
+      // Store interval reference
+      autoSlideRef.current = interval;
+    }
+    
+    return () => {
+      if (autoSlideRef.current) clearInterval(autoSlideRef.current);
+    };
+  }, [isMobile, isHovered, itemsPerView]);
+
+  const nextSlide = useCallback(() => {
+    setCurrent(prev => 
       prev + 1 >= Math.ceil(products.length / itemsPerView) ? 0 : prev + 1
     );
-  };
+  }, [itemsPerView]);
 
-  const prevSlide = () => {
-    setCurrent((prev) => 
+  const prevSlide = useCallback(() => {
+    setCurrent(prev => 
       prev === 0 ? Math.ceil(products.length / itemsPerView) - 1 : prev - 1
     );
-  };
+  }, [itemsPerView]);
 
   const goToSlide = (index: number) => {
     setCurrent(index);
@@ -159,6 +193,8 @@ const ProductSlider = () => {
         className="relative overflow-hidden rounded-xl"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onTouchStart={() => setIsHovered(true)}
+        onTouchEnd={() => setIsHovered(false)}
       >
         <motion.div
           className="flex"
@@ -214,7 +250,7 @@ const ProductSlider = () => {
                       <span className="text-xs text-gray-500 ml-1">({product.reviews})</span>
                     </div>
                     
-                    {/* <div className="flex items-center justify-between mt-3">
+                    <div className="flex items-center justify-between mt-3">
                       <div className="flex items-center">
                         <span className="text-sm font-bold text-gray-800">{product.price}</span>
                         {product.originalPrice && (
@@ -223,10 +259,7 @@ const ProductSlider = () => {
                           </span>
                         )}
                       </div>
-                      <button title="cart" className="p-2 bg-[#8a6725] text-white rounded-full hover:bg-blue-600 transition-colors">
-                        <ShoppingCart className="w-4 h-4" />
-                      </button>
-                    </div> */}
+                    </div>
                   </div>
                 </motion.div>
               </div>
@@ -234,9 +267,9 @@ const ProductSlider = () => {
           ))}
         </motion.div>
 
-        {/* Navigation Arrows - Only show on hover */}
+        {/* Navigation Arrows - Only show on hover for desktop, always show for mobile */}
         <AnimatePresence>
-          {isHovered && (
+          {(isHovered || isMobile) && (
             <>
               <motion.button
                 initial={{ opacity: 0, x: -20 }}
@@ -245,9 +278,9 @@ const ProductSlider = () => {
                 transition={{ duration: 0.2 }}
                 title="Previous Slide"
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100"
+                className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-lg hover:bg-gray-100"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
               </motion.button>
               <motion.button
                 initial={{ opacity: 0, x: 20 }}
@@ -256,9 +289,9 @@ const ProductSlider = () => {
                 transition={{ duration: 0.2 }}
                 title="Next Slide"
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100"
+                className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-lg hover:bg-gray-100"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
               </motion.button>
             </>
           )}
