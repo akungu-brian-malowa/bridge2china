@@ -271,7 +271,10 @@ const ProductSlider = () => {
                     <div className="flex items-center justify-between mt-3">
                       <div className="flex items-center">
                         <span className="text-sm font-bold text-gray-800">
-                          {product.price} <span className="text-xs text-gray-500">(1 piece)</span>
+                          {product.price}{" "}
+                          <span className="text-xs text-gray-500">
+                            (1 piece)
+                          </span>
                         </span>
                         {product.originalPrice && (
                           <span className="text-xs text-gray-500 line-through ml-2">
@@ -280,8 +283,8 @@ const ProductSlider = () => {
                         )}
                       </div>
                     </div>
-                    <span className="text-xs font-semibold bg-red-400 text-white px-2 py-1 rounded-md mt-2">
-                      For Wholesale – contact us today!
+                    <span className="mt-2 inline-block text-xs font-medium bg-red-500 text-white px-3 py-1 rounded-md shadow-sm">
+                      For Wholesale Price – Contact Us Today!
                     </span>
                   </div>
                 </motion.div>
