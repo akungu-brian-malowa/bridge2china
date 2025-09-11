@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import WhatsApp from "../components/whatsApp/WhatsApp";
 import Services from "../components/services/Services";
 import WhyChina from "../components/whyChina/WhyChina";
+import ProductSlider from "../components/Productslider/ProductSlider";
 import ShoppingGuide from "../components/shoppingGiude/ShoppingGuide";
 import CallToAction from "../components/call2Action.tsx/CallToAction";
 import AboutUs from "../components/aboutus/Aboutus";
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="overflow-x-hidden bg-white md:w-[80%] xl:w-[70%] mx-auto">
       <Hero />
+      <ProductSlider/>
       <AboutUs/>
       <Services />
       <WhyChina/>
