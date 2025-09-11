@@ -42,12 +42,12 @@ const AboutUs = () => {
       </div>
 
       {/* Our Story */}
-      <section className="md:py-6 py-2 px-4 md:px-8 md:mb-4">
+      <section className="md:py-6 py-2 px-2 md:px-4 md:mb-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#8a6725] block text-center">
             Our Story
           </h2>
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="md:w-1/2">
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
                 <img
@@ -77,7 +77,7 @@ const AboutUs = () => {
                 source quality products, and navigate the import/export process
                 with confidence.
               </p>
-              <div className="flex flex-wrap gap-4 mt-4">
+              <div className="flex flex-wrap gap-1 mt-4">
                 <div className="bg-[#8a6725] text-white px-4 py-2 rounded-md text-sm">
                   500+ Clients Served
                 </div>
