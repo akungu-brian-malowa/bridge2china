@@ -132,7 +132,7 @@ const ProductSlider = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xs md:text-sm lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
+        <h2 className="text-sm lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
           Featured Products 
           <span className="text-xs bg-[#8a6725] px-2 py-1 text-white rounded-md">coming soon</span>
         </h2>
