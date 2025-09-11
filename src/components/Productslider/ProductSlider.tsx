@@ -20,71 +20,79 @@ const products: Product[] = [
     name: "Premium Wireless Headphones",
     price: "KSh 12,999",
     originalPrice: "KSh 15,999",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.5,
     reviews: 124,
-    onSale: true
+    onSale: true,
   },
   {
     id: 2,
     name: "Smartphone Pro Max",
     price: "KSh 89,999",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.8,
     reviews: 89,
-    isNew: true
+    isNew: true,
   },
   {
     id: 3,
     name: "Luxury Smartwatch Series 7",
     price: "KSh 34,999",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.3,
-    reviews: 67
+    reviews: 67,
   },
   {
     id: 4,
     name: "Ultra-Slim Laptop Pro",
     price: "KSh 129,999",
-    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.7,
-    reviews: 143
+    reviews: 143,
   },
   {
     id: 5,
     name: "Wireless Earbuds Pro",
     price: "KSh 17,999",
     originalPrice: "KSh 19,999",
-    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.4,
     reviews: 98,
-    onSale: true
+    onSale: true,
   },
   {
     id: 6,
     name: "DSLR Camera Kit",
     price: "KSh 84,999",
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.6,
-    reviews: 112
+    reviews: 112,
   },
   {
     id: 7,
     name: "Gaming Console X",
     price: "KSh 49,999",
-    image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.9,
     reviews: 201,
-    isNew: true
+    isNew: true,
   },
   {
     id: 8,
     name: "Noise Cancelling Headphones",
     price: "KSh 28,999",
-    image: "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.2,
-    reviews: 76
-  }
+    reviews: 76,
+  },
 ];
 
 const ProductSlider = () => {
@@ -118,10 +126,10 @@ const ProductSlider = () => {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    
+    window.addEventListener("resize", handleResize);
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       if (autoSlideRef.current) clearInterval(autoSlideRef.current);
     };
   }, []);
@@ -131,31 +139,31 @@ const ProductSlider = () => {
     if (isMobile && !isHovered) {
       // Clear any existing interval
       if (autoSlideRef.current) clearInterval(autoSlideRef.current);
-      
+
       // Set new interval for auto sliding
       const interval = setInterval(() => {
-        setCurrent(prev => 
+        setCurrent((prev) =>
           prev + 1 >= Math.ceil(products.length / itemsPerView) ? 0 : prev + 1
         );
       }, 3000); // Slide every 3 seconds
-      
+
       // Store interval reference
       autoSlideRef.current = interval;
     }
-    
+
     return () => {
       if (autoSlideRef.current) clearInterval(autoSlideRef.current);
     };
   }, [isMobile, isHovered, itemsPerView]);
 
   const nextSlide = useCallback(() => {
-    setCurrent(prev => 
+    setCurrent((prev) =>
       prev + 1 >= Math.ceil(products.length / itemsPerView) ? 0 : prev + 1
     );
   }, [itemsPerView]);
 
   const prevSlide = useCallback(() => {
-    setCurrent(prev => 
+    setCurrent((prev) =>
       prev === 0 ? Math.ceil(products.length / itemsPerView) - 1 : prev - 1
     );
   }, [itemsPerView]);
@@ -167,10 +175,13 @@ const ProductSlider = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-sm lg:text-2xl font-bold text-gray-800 flex items-center gap-2">
-          Featured Products 
-          <span className="text-xs bg-[#8a6725] px-2 py-1 text-white rounded-md">coming soon</span>
+        <h2 className="text-base  lg:text-2xl font-bold text-gray-900 flex items-center gap-3">
+          Our Store – Featured Products
+          <span className="text-xs bg-yellow-700 px-2 py-1 rounded-md text-white font-medium">
+            Coming Soon
+          </span>
         </h2>
+
         <div className="flex space-x-2">
           <button
             title="Previous Slide"
@@ -189,7 +200,7 @@ const ProductSlider = () => {
         </div>
       </div>
 
-      <div 
+      <div
         className="relative overflow-hidden rounded-xl"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -208,7 +219,7 @@ const ProductSlider = () => {
               style={{ width: `${100 / itemsPerView}%` }}
             >
               <div className="p-3">
-                <motion.div 
+                <motion.div
                   className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300"
                   whileHover={{ y: -5 }}
                 >
@@ -218,7 +229,10 @@ const ProductSlider = () => {
                       alt={product.name}
                       className="w-full h-56 object-cover"
                     />
-                    <button title="like" className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-500 hover:text-white transition-colors">
+                    <button
+                      title="like"
+                      className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:bg-red-500 hover:text-white transition-colors"
+                    >
                       <Heart className="w-4 h-4" />
                     </button>
                     {product.isNew && (
@@ -232,10 +246,12 @@ const ProductSlider = () => {
                       </span>
                     )}
                   </div>
-                  
-                  <div className="p-4">
-                    <h3 className="font-semibold text-lg mb-1 line-clamp-1">{product.name}</h3>
-                    
+
+                  <div className="p-1 py-2">
+                    <h3 className="font-semibold text-lg mb-1 line-clamp-1">
+                      {product.name}
+                    </h3>
+
                     <div className="flex items-center mb-2">
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -247,12 +263,16 @@ const ProductSlider = () => {
                           }`}
                         />
                       ))}
-                      <span className="text-xs text-gray-500 ml-1">({product.reviews})</span>
+                      <span className="text-xs text-gray-500 ml-1">
+                        ({product.reviews})
+                      </span>
                     </div>
-                    
+
                     <div className="flex items-center justify-between mt-3">
                       <div className="flex items-center">
-                        <span className="text-sm font-bold text-gray-800">{product.price}</span>
+                        <span className="text-sm font-bold text-gray-800">
+                          {product.price}
+                        </span>
                         {product.originalPrice && (
                           <span className="text-xs text-gray-500 line-through ml-2">
                             {product.originalPrice}
@@ -260,6 +280,9 @@ const ProductSlider = () => {
                         )}
                       </div>
                     </div>
+                    <span className="text-xs font-semibold bg-red-400 text-white px-2 py-1 rounded-md">
+                      Wholesale available – contact us today!
+                    </span>
                   </div>
                 </motion.div>
               </div>
@@ -300,18 +323,20 @@ const ProductSlider = () => {
 
       {/* Dots Indicator */}
       <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: Math.ceil(products.length / itemsPerView) }).map((_, index) => (
-          <button
-            key={index}
-            title={`Go to slide ${index + 1}`}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              current === index
-                ? "bg-[#8a6725] w-6"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
-          />
-        ))}
+        {Array.from({ length: Math.ceil(products.length / itemsPerView) }).map(
+          (_, index) => (
+            <button
+              key={index}
+              title={`Go to slide ${index + 1}`}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                current === index
+                  ? "bg-[#8a6725] w-6"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+            />
+          )
+        )}
       </div>
     </div>
   );
