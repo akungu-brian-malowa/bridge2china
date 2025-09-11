@@ -18,7 +18,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Premium Wireless Headphones",
-    price: "KSh 12,999",
+    price: "KSh 13,999",
     originalPrice: "KSh 15,999",
     image:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
@@ -29,7 +29,7 @@ const products: Product[] = [
   {
     id: 2,
     name: "Smartphone Pro Max",
-    price: "KSh 89,999",
+    price: "KSh 99,999",
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.8,
@@ -39,7 +39,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Luxury Smartwatch Series 7",
-    price: "KSh 34,999",
+    price: "KSh 44,999",
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.3,
@@ -48,7 +48,7 @@ const products: Product[] = [
   {
     id: 4,
     name: "Ultra-Slim Laptop Pro",
-    price: "KSh 129,999",
+    price: "KSh 139,999",
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.7,
@@ -57,7 +57,7 @@ const products: Product[] = [
   {
     id: 5,
     name: "Wireless Earbuds Pro",
-    price: "KSh 17,999",
+    price: "KSh 18,999",
     originalPrice: "KSh 19,999",
     image:
       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
@@ -68,7 +68,7 @@ const products: Product[] = [
   {
     id: 6,
     name: "DSLR Camera Kit",
-    price: "KSh 84,999",
+    price: "KSh 94,999",
     image:
       "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.6,
@@ -77,7 +77,7 @@ const products: Product[] = [
   {
     id: 7,
     name: "Gaming Console X",
-    price: "KSh 49,999",
+    price: "KSh 59,999",
     image:
       "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.9,
@@ -87,7 +87,7 @@ const products: Product[] = [
   {
     id: 8,
     name: "Noise Cancelling Headphones",
-    price: "KSh 28,999",
+    price: "KSh 38,999",
     image:
       "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.2,
@@ -247,7 +247,7 @@ const ProductSlider = () => {
                     )}
                   </div>
 
-                  <div className="p-1 py-2">
+                  <div className="p-4">
                     <h3 className="font-semibold text-lg mb-1 line-clamp-1">
                       {product.name}
                     </h3>
@@ -271,7 +271,7 @@ const ProductSlider = () => {
                     <div className="flex items-center justify-between mt-3">
                       <div className="flex items-center">
                         <span className="text-sm font-bold text-gray-800">
-                          {product.price}
+                          {product.price} <span className="text-xs text-gray-500">(1 piece)</span>
                         </span>
                         {product.originalPrice && (
                           <span className="text-xs text-gray-500 line-through ml-2">
@@ -280,8 +280,8 @@ const ProductSlider = () => {
                         )}
                       </div>
                     </div>
-                    <span className="text-xs font-semibold bg-red-400 text-white px-2 py-1 rounded-md">
-                      Wholesale available – contact us today!
+                    <span className="text-xs font-semibold bg-red-400 text-white px-2 py-1 rounded-md mt-2">
+                      For Wholesale – contact us today!
                     </span>
                   </div>
                 </motion.div>
