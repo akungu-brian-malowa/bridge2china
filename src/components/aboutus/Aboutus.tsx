@@ -1,3 +1,5 @@
+import ourstory from "../../assets/ourstory.jpg";
+
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white text-[#333] max-w-7xl mx-auto">
@@ -50,7 +52,7 @@ const AboutUs = () => {
               <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96">
                 <img
                   alt="our"
-                  src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg"
+                  src={ourstory}
                   className="object-cover h-full w-full rounded-md"
                 />
               </div>
