@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Star, ShoppingCart, Heart } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star, Heart } from "lucide-react";
+//ShoppingCart,
 
 interface Product {
   id: number;
