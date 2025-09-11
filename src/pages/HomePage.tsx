@@ -13,11 +13,12 @@ const HomePage: React.FC = () => {
   return (
     <div className="overflow-x-hidden bg-white md:w-[80%] xl:w-[70%] mx-auto">
       <Hero />
-      <ProductSlider/>
+     
       <AboutUs/>
       <Services />
       <WhyChina/>
       <ShoppingGuide/>
+      <ProductSlider/>
       <CallToAction/>
     
       {/* ______ WhatsApp Icon ______ */}

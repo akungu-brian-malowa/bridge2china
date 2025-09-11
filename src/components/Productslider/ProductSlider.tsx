@@ -213,7 +213,7 @@ const ProductSlider = () => {
                       <span className="text-xs text-gray-500 ml-1">({product.reviews})</span>
                     </div>
                     
-                    <div className="flex items-center justify-between mt-3">
+                    {/* <div className="flex items-center justify-between mt-3">
                       <div className="flex items-center">
                         <span className="text-sm font-bold text-gray-800">{product.price}</span>
                         {product.originalPrice && (
@@ -225,7 +225,7 @@ const ProductSlider = () => {
                       <button title="cart" className="p-2 bg-[#8a6725] text-white rounded-full hover:bg-blue-600 transition-colors">
                         <ShoppingCart className="w-4 h-4" />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </div>
