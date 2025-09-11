@@ -23,7 +23,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.5,
-    reviews: 124,
+    reviews: 1240,
     onSale: true,
   },
   {
@@ -33,7 +33,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.8,
-    reviews: 89,
+    reviews: 890,
     isNew: true,
   },
   {
@@ -43,7 +43,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.3,
-    reviews: 67,
+    reviews: 670,
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.7,
-    reviews: 143,
+    reviews: 1430,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.4,
-    reviews: 98,
+    reviews: 980,
     onSale: true,
   },
   {
@@ -72,7 +72,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.6,
-    reviews: 112,
+    reviews: 1120,
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.9,
-    reviews: 201,
+    reviews: 2010,
     isNew: true,
   },
   {
@@ -91,7 +91,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     rating: 4.2,
-    reviews: 76,
+    reviews: 760,
   },
 ];
 
