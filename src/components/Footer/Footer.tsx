@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <LuMessageSquare />
-                <a href="mailto:info.vashathebridgetochina@gmail.com">info.bridgetochina@gmail.com</a>
+                <a href="mailto:info.vashathebridgetochina@gmail.com">info.bridgetochina254@gmail.com</a>
               </li>
             </ul>
           </div>

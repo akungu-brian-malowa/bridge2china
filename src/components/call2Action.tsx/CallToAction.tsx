@@ -65,7 +65,7 @@ const CallToAction: React.FC = () => {
                 </svg>
               </div>
               <span className="text-sm">
-                info.bridgetochina@gmail.com
+                info.bridgetochina254@gmail.com
               </span>
             </div>
           </div>
